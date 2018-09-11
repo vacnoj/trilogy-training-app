@@ -1,0 +1,25 @@
+.trilogyHeader {
+    border-color: aqua;
+    border-bottom-width: thin;
+    background-color: grey;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login {
+    margin-left: 40px;
+}
+
+.subject {
+    text-align: center;
+    background-color: aqua;
+}
+
+.search {
+    float: right;
+
+}
+
+.back {
+float: right;
+}

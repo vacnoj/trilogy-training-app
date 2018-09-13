@@ -4,6 +4,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
+var path = require("path");
 var hbs = require("express-handlebars");
 
 mongoose.Promise = Promise;
@@ -17,6 +18,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(process.cwd() + '/public'));
 
 //using handlebars - setting the main page
+app.set('views', path.join(_dirname, "views"));
 app.engine("handlebars", hbs({defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 

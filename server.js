@@ -4,7 +4,6 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
-var path = require("path");
 var hbs = require("express-handlebars");
 
 mongoose.Promise = Promise;
@@ -15,10 +14,10 @@ mongoose.Promise = Promise;
 var app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(process.cwd() + '/public'));
+app.use(express.static("public"));
+// app.use(express.static(process.cwd() + '/public'));
 
 //using handlebars - setting the main page
-/*app.set('views', path.join(_dirname, "views"));*/
 app.engine("handlebars", hbs({defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
@@ -39,5 +38,5 @@ app.use(function(req, res, next){
 
 var PORT = process.env.PORT || 3000;
 app.listen(PORT, function() {
-  console.log("Success: Running on Port 3000");
+  console.log(`Success: Running on port:${PORT}`);
 });

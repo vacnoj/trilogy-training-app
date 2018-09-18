@@ -2,7 +2,7 @@
 <html>
 <head>
     <title> {{ title }}</title>
-    <link rel="icon" href="./style/trilogy.png">
+    <link rel="icon" href="./../style/trilogy.png">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link type="text/css" rel="stylesheet" href="./style/style.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="./../style/style.css"  media="screen,projection"/>
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -26,6 +26,20 @@
 {{#if user.admin}}
     {{> nav/adminnav}}
 {{/if}} --}}
+<div class="container">
+      <div class="">
+        <nav class="cyan lighten-1">
+          <ul >
+            {{#if user}}
+              <li role="presentation"><a href="/">Dashboard</a></li>
+              <li role="presentation"><a href="/users/logout">Logout</a></li>
+            {{else}}
+              <li role="presentation"><a href="/users/login">Login</a></li>
+              <li role="presentation"><a href="/users/register">Register</a></li>
+            {{/if}}
+          </ul>
+        </nav>
+      </div>
 
 {{{ body }}}
 </body>

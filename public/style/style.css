@@ -23,3 +23,11 @@
 .back {
 float: right;
 }
+
+.nav {
+    margin-bottom: 10px;
+}
+
+.logo-holder {
+    padding-top: 40px;
+}

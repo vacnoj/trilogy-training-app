@@ -1,81 +1,249 @@
+
 <!--header row-->
-<div>
-    <div class="row">
-        <div class="col s2"></div>
-        <div class="col s8 trilogyHeader"><h1>Orientation</h1></div>
-        <div class="col s2"></div>
-    </div>
-</div>
-<!--first row-->
-<div>
-    <div class="row">
-        <div class="col s3"></div>
-        <div class="col s6 subject"><p>ADP</p></div>
-        <div class="col s3"></div>
-    </div>
-</div>
-
-<!--second row-->
-<div>
-    <div class="row">
-        <div class="col s1 content"></div>
-        <div class="col s10 content">
-            <p>ADP is the employee self service website that we utilize to provide you with the following information: Direct access to your employee records and company information and the ability to access 24/7. You can update the following: Tax-withholding specifications, direct deposit information. You can also view the following: Pay statements, Annual statement (Form W-2).</p>
+<div class="headContent">
+        <div>
+            <div class="row">
+                <div class="col s2"></div>
+                <div class="col s8 trilogyHeader"><h1>Orientation</h1></div>
+                <div class="col s2"></div>
+            </div>
         </div>
-        <div class="col s1 content"></div>
-    </div>
-</div>
-
-<!--third row-->
-<div>
-    <div class="row">
-        <div class="col s1 content"></div>
-        <div class="col s5 content">
-            <h4>Registering for ADP</h4>
-
-            <p>Go to website: <a target="_blank" href="https://workforcenow.adp.com/public/index.htm">ADP</a></p>
-
-            <p>Click ‘Register Here</p>
-        </div>
-        <div class="col s5 content"></div><img alt="ADP Login Screen" src="/img/adp1.png">
-        <div class="col s1 content"></div>
-    </div>
-</div>
-
-<!--forth row-->
-<div>
-    <div class="row">
-        <div class="col s1 content"></div>
-        <div class="col s5 content">
-            <p>Type in Trilogy Education Services employee code: TRILOGYED-1234</p>
-
-            <p>Click ‘Yes’ when prompted if you want to set up an account with Trilogy Education.</p>
-
-            <p>Fill in appropriate information to verify your identity and finish creating your account.</p>
+        <!--first row-->
+        <div>
+            <div class="row">
+                <div class="col s3"></div>
+                <div class="col s6 subject"><p>ADP</p></div>
+                <div class="col s3"></div>
+            </div>
         </div>
 
-        <div class="col s5 content"></div><img alt="ADP Create an Account" src="/img/adp2.png">
-        <div class="col s1 content"></div>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
     </div>
-</div>
+</div> <!--end of headContent-->
 
-<!--fifth row-->
-<div>
-    <div class="row">
-        <div class="col s1 content"></div>
-        <div class="col s5 content">
-            <h4>Completing Your Time & Attendance Tasks</h4>
-
-            <p>Easily clock in and clock out here. </p>
-
-            <p>If an entry is missed, inform your manager(s) via Slack direct message. Adding a note on your timecard does not notify your manager and they will not see it.</p>
-
+<div class ="content">
+        <!--second row-->
+        <div>
+            <div class="row">
+                <div class="col s1"></div>
+                <div class="col s10">
+                    <p>ADP is the employee self service website that we utilize to provide you with the following information: Direct access to your employee records and company information and the ability to access 24/7. You can update the following: Tax-withholding specifications, direct deposit information. You can also view the following: Pay statements, Annual statement (Form W-2).</p>
+                </div>
+                <div class="col s1"></div>
+            </div>
         </div>
-        <div class="col s5 content"></div><img alt="ADP Login Screen" src="/img/adp3.png">
-        <div class="col s1 content"></div>
-    </div>
-</div>
 
+        <!--third row-->
+        <div>
+            <div class="row">
+                <div class="col s1"></div>
+                <div class="col s5">
+                    <h4>Registering for ADP</h4>
+
+                    <p>Go to website: <a target="_blank" href="https://workforcenow.adp.com/public/index.htm">ADP</a></p>
+
+                    <p>Click ‘Register Here</p>
+                </div>
+                <div class="col s5"></div>
+                <img class="rightContent" alt="ADP Login Screen" src="/img/adp1.png">
+                <div class="col s1"></div>
+            </div>
+        </div>
+        <!--<div class="modal fade" id="enlargeImageModal" tabindex="-1" role="dialog" aria-labelledby="enlargeImageModal" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="" class="enlargeImageModalSource" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <!--<script>
+            $(function() {
+                $('img').on('click', function() {
+                    $('.enlargeImageModalSource').attr('src', $(this).attr('src'));
+                    console.log("this ran");
+                    $('#enlargeImageModal').modal('show');
+                    console.log($('#enlargeImageModal').val())
+
+                });
+            });
+        </script>-->
+
+        <!--forth row-->
+        <div>
+            <div class="row">
+                <div class="col s1"></div>
+                <div class="col s5 ">
+                    <p>Type in Trilogy Education Services employee code:<br><br> <strong>TRILOGYED-1234</strong></p>
+
+                    <p>Click ‘Yes’ when prompted if you want to set up an account with Trilogy Education.</p>
+
+                    <p>Fill in appropriate information to verify your identity and finish creating your account.</p>
+                </div>
+
+                <div class="col s5"></div><img class="rightContent" alt="ADP Create an Account" src="/img/adp2.png">
+                <div class="col s1"></div>
+            </div>
+        </div>
+
+        <!--fifth row-->
+        <div>
+            <div class="row">
+                <div class="col s1"></div>
+                <div class="col s5">
+                    <h4>Completing Your Time & Attendance Tasks</h4>
+
+                    <p>Easily clock in and clock out here. </p>
+
+                    <p>If an entry is missed, inform your manager(s) via Slack direct message. Adding a note on your timecard does not notify your manager and they will not see it.</p>
+
+                </div>
+                <div class="col s5"></div><img class="rightContent" alt="ADP Login Screen" src="/img/adp3.png">
+                <div class="col s1"></div>
+            </div>
+        </div>
+
+    <!--sixth row-->
+    <div>
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s5">
+                <h5>Timecard:</h5>
+
+                <p>Here you can view your timecard of current and previous pay periods.</p>
+
+            </div>
+            <div class="col s5"></div><img class="rightContent" alt="ADP Timecard" src="/img/adp4.png">
+            <div class="col s1"></div>
+        </div>
+    </div>
+
+    <!--seventh row-->
+    <div>
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s5">
+                <h4>Information on Pay</h4>
+
+                <p>Access pay statements quickly via the homepage.</p>
+
+            </div>
+            <div class="col s5"></div><img class="rightContent" alt="ADP Informaiton on Pay" src="/img/adp5.png">
+            <div class="col s1"></div>
+        </div>
+    </div>
+
+    <!--eighth row-->
+    <div>
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s5">
+                <p>Also access more information here:</p>
+
+            </div>
+            <div class="col s5"></div><img class="rightContent" alt="ADP Access Info" src="/img/adp6.png">
+            <div class="col s1"></div>
+        </div>
+    </div>
+
+    <!--ninth row-->
+    <div>
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s5">
+                <p>You are able to:</p>
+                    <ul style="list-style-type:disc">
+                <span class="bullet"><li>Update the following: Tax-withholding specifications and direct deposit information</li></span>
+                <span class="bullet"><li> View the following: pay statements, annual statements (Form W-2)</li></span>
+                <span class="bullet"><li>Utilize the calculators; ADP offers financial tools to aid with: Salary Paycheck Calculator, Hourly Paycheck Calculator, Gross Pay Calculator, 401k Planner, 403(b) Planner, and W-4 Assistant</li></span>
+            </ul>
+            </div>
+            <div class="col s5"></div><img class="rightContent" alt="ADP Edit Personal Information" src="/img/adp7.png">
+            <div class="col s1"></div>
+        </div>
+    </div>
+
+    <!--tenth row-->
+    <div>
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s5">
+                <h4>Access Employee Benefits</h4>
+                <p>Via the Homepage, ADP News will show various ‘News’ and you will be able to click<br>
+                    ‘Your Employee Discounts’.
+                </p>
+
+            </div>
+            <div class="col s5"></div><img class="rightContent" alt="ADP Access Info" src="/img/adp7.png">
+            <div class="col s1"></div>
+        </div>
+    </div>
+
+    <!--11 row-->
+    <div>
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s5">
+                <p>The link will bring you to LifeMart, a website which provides various discounts.</p>
+
+            </div>
+            <div class="col s5"></div><img class="rightContent" alt="ADP Access Info" src="/img/adp8.png">
+            <div class="col s1"></div>
+        </div>
+    </div>
+
+    <!--12 row-->
+    <div>
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s5">
+                <h4>ADP Mobile</h4>
+                <p>Stay connected to company information on your mobile device! ADP Mobile provides a convenient way to access payroll, time and attendance, benefits and other vital HR information. Some information may not be accessible on the app.</p>
+            </div>
+            <div class="col s5"></div>
+            <div class="col s1"></div>
+        </div>
+    </div>
+
+    <!--13 row-->
+    <div>
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s10">
+                <img class="mobile" alt="ADP Access Info" src="/img/adp9.png">
+                <img class="mobile" alt="ADP Access Info" src="/img/adp10.png">
+                <img class="mobile" alt="ADP Access Info" src="/img/adp11.png">
+            </div>
+        </div>
+    </div>
+
+
+    <!--14 row-->
+    <div>
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s5">
+                <p>You are able to:</p>
+                <ul style="list-style-type:disc">
+                    <span class="bullet"><li>Update the following: Tax-withholding specifications and direct deposit information</li></span>
+                    <span class="bullet"><li> View the following: pay statements, annual statements (Form W-2)</li></span>
+                    <span class="bullet"><li>Utilize the calculators; ADP offers financial tools to aid with: Salary Paycheck Calculator, Hourly Paycheck Calculator, Gross Pay Calculator, 401k Planner, 403(b) Planner, and W-4 Assistant</li></span>
+                </ul>
+            </div>
+            <div class="col s5"></div>
+            <div class="col s1"></div>
+        </div>
+    </div>
+
+
+</div> <!--end of content div-->
+
+<br>
 <!--Next and Back Buttons at the end of the page-->
 <div>
     <div class="row">
@@ -83,3 +251,16 @@
         <div class="col s6"><a class="btn next">Next</a></div>
     </div>
 </div>
+
+<script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+    }
+</script>
+

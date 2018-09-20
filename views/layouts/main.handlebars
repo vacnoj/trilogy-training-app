@@ -20,6 +20,8 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script type="text/javascript" src="/js/app.js"></script>
+
+
 </head>
 
 <body>
@@ -27,20 +29,21 @@
 {{#if user.admin}}
     {{> nav/adminnav}}
 {{/if}} --}}
-<div class="container">
-      <div class="">
-        <nav class="cyan lighten-1">
-          <ul >
+<div class="navbar-fixed">
+    <nav class="cyan lighten-1">
+        <ul >
             {{#if user}}
-              <li role="presentation"><a href="/">Admin</a></li>
-              <li role="presentation"><a href="/users/logout">Logout</a></li>
+                <li role="presentation"><a href="/">Admin</a></li>
+                <li role="presentation"><a href="/users/logout">Logout</a></li>
             {{else}}
-              <li role="presentation"><a href="/users/login">Login</a></li>
-              <li role="presentation"><a href="/users/register">Register</a></li>
+                <li role="presentation"><a href="/users/login">Login</a></li>
+                <li role="presentation"><a href="/users/register">Register</a></li>
             {{/if}}
-          </ul>
-        </nav>
-      </div>
+        </ul>
+    </nav>
+</div>
+<div class="container">
+
 
 {{{ body }}}
 </body>

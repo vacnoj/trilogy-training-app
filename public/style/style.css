@@ -48,11 +48,7 @@ img.leftContent {
     padding-top: 25px;
     /* cursor: zoom-in;*/
 }
-img.mobile {
-    width:33.33%;
-    float: left;
-    padding:5px;
-}
+
 .headContent {
     position: fixed;
     width: 100%;

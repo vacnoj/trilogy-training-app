@@ -38,9 +38,15 @@ float: right;
 
 
 img.rightContent {
-    width: 50%;
+    width: 100%;
     padding-top: 25px;
    /* cursor: zoom-in;*/
+}
+
+img.adp {
+    width: 50%;
+    padding-top: 25px;
+    /* cursor: zoom-in;*/
 }
 
 img.leftContent {

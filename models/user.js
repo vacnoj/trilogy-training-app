@@ -12,7 +12,17 @@ var UserSchema = mongoose.Schema({
 	},
 	email: {
 		type: String
-	}	
+	},
+	trilogy: {
+		type: Boolean,
+		default: false
+		
+	},
+	adp: {
+		type: Boolean,
+		default: false
+		
+	}		
 });
 
 var User = module.exports = mongoose.model('User', UserSchema);

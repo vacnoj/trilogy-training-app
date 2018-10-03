@@ -72,7 +72,9 @@ img.leftContent {
 div.content {
     overflow: scroll;
     padding: 100px 0;
-    margin: 170px auto 0 auto;
+    /*margin: 200px auto 0 auto;
+    commented out because scrollspy left a big gap with this code
+    */
 
 }
 
@@ -89,4 +91,18 @@ img.school {
 
 strong {
     font-weight: 900;
+}
+
+/*new content for scrollspy*/
+
+.scrollspy {
+    padding-top: 150px;
+}
+
+.table-of-contents a.active {
+    border-left: 2px solid #35c2e1
+}
+
+.table-of-contents a:hover {
+    border-left: 1px solid #35c2e1
 }

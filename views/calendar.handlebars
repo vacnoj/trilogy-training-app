@@ -1,20 +1,24 @@
 <!--header row-->
 <div class="headContent">
-    <div>
-        <div class="row">
-            <div class="col s2"></div>
-            <div class="col s8 trilogyHeader"><h1>Orientation</h1></div>
-            <div class="col s2"></div>
-        </div>
-    </div>
     <!--first row-->
     <div>
         <div class="row">
-            <div class="col s3"></div>
-            <div class="col s6 subject"><p>Calendar</p></div>
-            <div class="col s3"></div>
+            <div class="col s12 subject"><p>Calendar</p></div>
         </div>
     </div>
+
+    <div class ="row">
+        <div class="section table-of-contents">
+            <div class="col s2"><a href="#intro">Intro</a></div>
+            <div class="col s2"><a href="#block">Block</a></div>
+            <div class="col s2"><a href="#share">Share</a></div>
+     <!--       <div class="col s2"><a href="#story">Job3</a></div>
+            <div class="col s2"><a href="#story">Job4</a></div>
+            <div class="col s2"><a href="#story">Job5</a></div>-->
+        </div>
+    </div>
+    <!--end of table of contents-->
+
 
     <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
@@ -22,8 +26,18 @@
 </div> <!--end of headContent-->
 
 <div class ="content">
+
+    <div id="intro" class="section scrollspy" style="margin-top: 50px">
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s10">
+                <p>Your calendar is one of the most important tool as a recruiter. It help to keep you on task to know what is next. Managers can view you calendar to set time for one-on-ones, lunch and learns, and fun activities. Your calendar is linked to your trilogy email. If you have not received your trilogy email - no worries. Once you receive it you will be a pro in no time. Your available will be automatically added to your trilogy calendar. This lesson will go over blocking time and sharing your calendar.</p>
+            </div>
+            <div class="col s1"></div>
+        </div>
+    </div>
     <!--1row-->
-    <div>
+    <div id="block" class="section scrollspy">
         <div class="row">
             <div class="col s1"></div>
             <!--placeholder img-->
@@ -43,7 +57,7 @@
         </div>
     </div>
     <!--2row-->
-    <div>
+    <div id="share" class="section scrollspy">
         <div class="row">
             <div class="col s1"></div>
             <!--placeholder img-->
@@ -63,8 +77,6 @@
                 <br>
                 <img class="center" style="padding: 25px;" alt="Adding Manager to Calendar" src="/img/calendar.png">
                 <br>
-
-
             </div>
             <div class="col s1"></div>
         </div>

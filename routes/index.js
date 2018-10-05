@@ -72,6 +72,16 @@ router.get('/team', ensureAuthenticated, function(req,res) {
 	res.render('team', {user});
 });
 
+router.get('/evolve', ensureAuthenticated, function(req,res) {
+    var user = req.user;
+    res.render('evolve', {user});
+});
+
+router.get('/quiz', ensureAuthenticated, function(req,res) {
+    var user = req.user;
+    res.render('quiz', {user});
+});
+
 function ensureAuthenticated(req, res, next){
 	if(req.isAuthenticated()){
 		return next();

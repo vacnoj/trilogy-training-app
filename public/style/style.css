@@ -203,7 +203,18 @@ strong {
 .btn:hover, .btn-large:hover, .btn-small:hover{
     background-color: #2d90a3;
     opacity: 0.75;
-
-
 }
+
+.answers label{
+    display: block;
+}
+
+.question{
+    font-weight: 600;
+}
+.answers {
+    margin-bottom: 20px;
+}
+
+
 

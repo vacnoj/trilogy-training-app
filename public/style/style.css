@@ -216,5 +216,16 @@ strong {
     margin-bottom: 20px;
 }
 
+.pageNav {
+    justify-content: center;
+    display: flex;
+    /* align-items: center; */
+    /*text-align: center;*/
+}
+
+a.pageNav {
+    padding-right: 10px;
+}
+
 
 

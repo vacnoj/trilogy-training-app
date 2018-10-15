@@ -19,6 +19,7 @@ $(document).ready(function() {
 
 });
 
+/*$(document).on('click','#submit',function() {*/
 window.onload = function(){
 
     var myQuestions = [
@@ -128,6 +129,7 @@ window.onload = function(){
     }
 
     generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+
 
 };
 

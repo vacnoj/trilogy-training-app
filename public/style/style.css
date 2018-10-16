@@ -79,6 +79,8 @@ p {
     text-decoration: underline;
     text-decoration-color: white;
     color: white;
+    /*text-decoration-color: #2d90a3;
+    color: #2d90a3;*/
     display: inline-block;
     position: relative;
 }
@@ -185,15 +187,21 @@ strong {
 /*new content for scrollspy*/
 
 .scrollspy {
-    padding-top: 100px;
+    padding-top: 20px;
+}
+
+.table-of-contents {
+    margin-left: 10px;
 }
 
 .table-of-contents a.active {
-    border-left: 2px solid #35c2e1
+    border-left: 2px solid #35c2e1;
+    margin-left: 10px;
 }
 
 .table-of-contents a:hover {
-    border-left: 1px solid #35c2e1
+    border-left: 1px solid #35c2e1;
+    margin-left: 10px;
 }
 
 .btn{
@@ -225,7 +233,7 @@ strong {
 
 a.pageNav {
     padding-right: 10px;
+    padding-left: 10px;
 }
-
 
 

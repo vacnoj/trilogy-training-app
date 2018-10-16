@@ -12,6 +12,61 @@ var UserSchema = mongoose.Schema({
 	},
 	email: {
 		type: String
+	},
+	trilogy: {
+		type: Boolean,
+		default: false
+		
+	},
+	adp: {
+		type: Boolean,
+		default: false
+		
+	},
+	bamboo: {
+		type: Boolean,
+		default: false
+		
+	},
+	calendar: {
+		type: Boolean,
+		default: false
+		
+	},
+	linkedin: {
+		type: Boolean,
+		default: false
+		
+	},
+	slack: {
+		type: Boolean,
+		default: false
+		
+	},
+	salesforce: {
+		type: Boolean,
+		default: false
+		
+	},
+	team: {
+		type: Boolean,
+		default: false
+		
+	},
+	mail: {
+		type: Boolean,
+		default: false
+		
+	},
+	policies: {
+		type: Boolean,
+		default: false
+		
+	},
+	talentpool: {
+		type: Boolean,
+		default: false
+		
 	}	
 });
 

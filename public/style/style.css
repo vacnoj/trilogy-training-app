@@ -1,7 +1,67 @@
+
+/*.Trilogy Colors */
+.RGB-Hex {
+background-color: #5bc6e1
+#498fa1
+#35c2e1
+#5ee2f6
+#81cae3
+#2d90a3
+}
+
+a {
+    color: #28c8e5;
+    font-size: 14px;
+}
+
+
+p {
+    font-family: freight-micro-pro, Helvetica,Arial,sans-serif;
+}
+
+.navbar-fixed {
+    background-color: white;
+    height: 10%px;
+}
+
+#logo {
+    padding: 20px 0 20px 20px;
+    width: 187px;
+}
+
+.logo-container {
+    width: 90%;
+    position: fixed;
+    /*z-index: 2;*/
+    padding-bottom: 5px;
+    background-color: white;
+
+}
+.mainnav a {
+    color: rgb(17, 17, 17);
+    font-weight: 700;
+    text-align: center;
+    background-color: white;
+
+}
+
+.mainnav a:hover {
+    color: #28c8e5;
+    text-decoration: none;
+    background-color: white;
+}
+
+.nav a:focus {
+    background-color: transparent;
+}
+
+.container {
+    margin-top: 35px;
+}
+
+
 .trilogyHeader {
-    border-color: aqua;
-    border-bottom-width: thin;
-    background-color: grey;
+    background-color: #82e3f6;
     text-align: center;
     margin-top: 10px;
 }
@@ -11,23 +71,154 @@
 }
 
 .subject {
+    background-color: #2d90a3;
+    margin-top: 0px;
     text-align: center;
-    background-color: aqua;
+    font-size: 30px;
+    font-family: museo-sans,sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: white;
+    color: white;
+    display: inline-block;
+    position: relative;
+    height: 7%;
 }
 
-.search {
+#rutgers {
+    margin-right: 45px;
     float: right;
-
+    width: 100%;
 }
+
 
 .back {
 float: right;
 }
 
-.nav {
-    margin-bottom: 10px;
+.mainnav {
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: none;
+    font-family: museo-sans, sans-serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
 }
 
 .logo-holder {
     padding-top: 40px;
 }
+
+.teamPics {
+    width: 33.33%;
+    filter: grayscale(100%);
+}
+
+.rowPics {
+    width: 90%;
+    filter: grayscale(100%);
+}
+
+.title {
+    font-weight: 900;
+}
+
+
+img.rightContent {
+    width: 100%;
+    padding-top: 25px;
+   /* cursor: zoom-in;*/
+}
+
+img.leftContent {
+    width: 100%;
+    padding-top: 25px;
+    /* cursor: zoom-in;*/
+}
+
+.headContent {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 91px;
+    right: 0;
+    z-index: 99;
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #82e3f6;
+    width: 0%;
+}
+
+div.content {
+    overflow: scroll;
+    padding: 10px 0 20px 0;
+    /*margin: 200px auto 0 auto;
+    commented out because scrollspy left a big gap with this code
+    */
+
+}
+
+img.school {
+    width: 100%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:75%;
+}
+
+strong {
+    font-weight: 900;
+}
+
+
+/*new content for scrollspy*/
+
+.scrollspy {
+    padding-top: 10px;
+}
+
+.table-of-contents a.active {
+    border-left: 2px solid #35c2e1
+}
+
+.table-of-contents a:hover {
+    border-left: 1px solid #35c2e1
+}
+
+.btn{
+    background-color: #2d90a3;
+}
+
+.btn:hover, .btn-large:hover, .btn-small:hover{
+    background-color: #2d90a3;
+    opacity: 0.75;
+}
+
+.answers label{
+    display: block;
+}
+
+.question{
+    font-weight: 600;
+}
+.answers {
+    margin-bottom: 20px;
+}
+
+.mainmenu {
+    margin-bottom: 6px
+}
+

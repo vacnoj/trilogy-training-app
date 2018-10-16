@@ -1,41 +1,58 @@
-!--header row-->
+<!--header row-->
 <div class="headContent">
-    <div>
-        <div class="row">
-            <div class="col s2"></div>
-            <div class="col s8 trilogyHeader"><h1>Orientation</h1></div>
-            <div class="col s2"></div>
-        </div>
-    </div>
     <!--1 row-->
     <div>
         <div class="row">
-            <div class="col s3"></div>
-            <div class="col s6 subject"><p>Talent Pool</p></div>
-            <div class="col s3"></div>
+            <div class="col s12 subject"><p>Talent Pool</p></div>
         </div>
     </div>
+
+    <div class ="row">
+        <div class="section table-of-contents">
+            <div class="col s2"><a href="#intro">Intro</a></div>
+            <div class="col s2"><a href="#what">What</a></div>
+            <div class="col s2"><a href="#why">Why</a></div>
+            <div class="col s2"><a href="#how">How</a></div>
+            <!--<div class="col s2"><a href="#story">Job4</a></div>
+            <div class="col s2"><a href="#story">Job5</a></div>-->
+        </div>
+    </div>
+    <!--end of table of contents-->
 
     <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
     </div>
 </div> <!--end of headContent-->
 
+
 <div class ="content">
     <!--2 row-->
-    <div>
+    <div id="intro" class="section scrollspy" style="margin-top: 50px">
+        <div>
+        <div class="row">
+            <div class="col s12 subject"><p>Talent Pool</p></div>
+        </div>
+    </div>
         <div class="row">
             <div class="col s1"></div>
-            <div class="col s5"><img class="rightContent" src="/img/Talent Pool 1.png"></div>
-            <div class="col s5">
+            <div class="col s10">
+                <img class="center" style="padding: 25px; width: 100%;" src="/img/TalentPool1.png">
+                <br>
                 <p>Our <a target="_blank" href="https://trilogy-recruitment.herokuapp.com/">Talent Pool</a> is what we use for academic recruitment. It is a virtual swimming pool for potential candidates sourced for utilization at a later date to help streamline the hiring process.</p>
+                <br>
+                <ul>
+                    <strong>
+                        <li>Username: jess</li>
+                        <li>Password: margaritas</li>
+                    </strong>
+                </ul>
             </div>
             <div class="col s1"></div>
         </div>
     </div>
 
     <!--3 row-->
-    <div>
+    <div id="what" class="section scrollspy">
         <div class="row">
             <div class="col s1"></div>
             <div class="col s10">
@@ -58,11 +75,11 @@
     </div>
 
     <!--4 row-->
-    <div>
+    <div id="why" class="section scrollspy">
         <div class="row">
             <div class="col s1"></div>
             <div class="col s10">
-              <h4>Why Use a Talent Pool?</h4>
+              <h4>Why use a Talent Pool?</h4>
 
               <p>There are various ways in which you can utilize talent pools, but here are the most beneficial:</p>
                 <ul>
@@ -81,18 +98,18 @@
     </div>
 
     <!--5 row-->
-    <div>
+    <div id="how" class="section scrollspy">
         <div class="row">
             <div class="col s1"></div>
-            <div class="col s5">
-                <h4>Adding a Candidate</h4>
+            <div class="col s10">
+                <h4>How to add a Candidate</h4>
 
-                <p>If any stage of the interview process has been completed, be sure to add the candidate’s id number from the<a target="_blank" href="https://trilogy-recruitment.herokuapp.com/">Matrix Reloaded</a>. </p>
+                <p>If any stage of the interview process has been completed, be sure to add the candidate’s id number from the <a target="_blank" href="https://trilogy-recruitment.herokuapp.com/">Matrix Reloaded</a>. </p>
 
                 <p>The Talent Pool is compatible with Google Chrome and is not Safari friendly.</p>
 
             </div>
-            <div class="col s5"><img class="rightContent" src="/img/Talent Pool 2.png"></div>
+            <img class="center" style="padding: 25px; width: 100%;" src="/img/TalentPool2.png"></div>
             <div class="col s1"></div>
         </div>
     </div>
@@ -104,6 +121,7 @@
 <div>
     <div class="row">
         <div class="col s6"><a class="btn back" href="/">Back</a></div>
-        <div class="col s6"><a class="btn next">Next</a></div>
+        <div class="col s6"><a class="btn next" id="complete" data-name="talentpool" href="/">Next</a></div>
     </div>
 </div>
+

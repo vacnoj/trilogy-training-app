@@ -1,36 +1,120 @@
-<div class="row">
-    <div class="col s2"></div>
-    <div class="col s8 trilogyHeader"><h1>Orientation</h1></div>
-    {{!-- <div class="col s2"><p class="login">LoginMan</p><br>
-        <button class="login">Login Button</button> --}}
-    </div>
-
-</div>
-<div>
-    <div class="row">
-        <div class="col s3"></div>
-        <div class="col s6 subject"><p>LinkedIn</p></div>
-        {{!-- <div class="col s3 search"><p>Search</p></div> --}}
-    </div>
-</div>
-
-<div>
-    <div class="row">
-        <div class="col s1 content"></div>
-        <div class="col s5 content">
-            {{!-- <h2>{{user.username}}</h2> --}}
-            <p>Lorem ipsum dolor amet messenger bag trust fund hexagon hell of, food truck chillwave synth tbh enamel pin succulents crucifix ennui air plant cornhole raclette.</p>
-
-            <p>Skateboard food truck pour-over kickstarter echo park cloud bread letterpress asymmetrical knausgaard, aesthetic 90's succulents intelligentsia jianbing squid. Austin occupy VHS, authentic activated charcoal helvetica +1 chillwave etsy locavore. Knausgaard squid stumptown vice, microdosing fanny pack bicycle rights retro asymmetrical keffiyeh beard. Tumeric offal cloud bread umami, vinyl tumblr distillery 8-bit hella. PBR&B freegan hammock, swag slow-carb mlkshk tacos man braid seitan austin. Franzen meditation tbh ennui, venmo gastropub schlitz vegan asymmetrical raw denim kinfolk tofu.</p>
+<!--header row-->
+<div class="headContent">
+    <!--first row-->
+    {{!-- <div>
+        <div class="row">
+            <div class="col s12 subject"><p>LinkedIn</p></div>
         </div>
-        <div class="col s5 content"><p><iframe width="560" height="315" src="https://www.youtube.com/embed/GwoqGlYQ4vk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p></div>
-        <div class="col s1 content"></div>
-    </div>
-</div>
+    </div> --}}
 
-<div>
-    <div class="row">
-        <div class="col s6"><a class="btn back" href="/">Back</a></div>
-        <div class="col s6"><a class="btn next">Next</a></div>
+    <div class ="row">
+        <div class="section table-of-contents">
+            <div class="col s2"><a href="#intro">Intro</a></div>
+            <div class="col s2"><a href="#brand">Branding</a></div>
+            <div class="col s2"><a href="#summary">Summary</a></div>
+          <!--  <div class="col s2"><a href="#ping">Ping</a></div>
+            <div class="col s2"><a href="#access">Access</a></div>
+            <div class="col s2"><a href="#extra">Extra</a></div>-->
+        </div>
     </div>
-</div>
+    <!--end of table of contents-->
+
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+</div> <!--end of headContent-->
+
+<div class ="content">
+
+    <!--row 1-->
+    <div id="intro" class="section scrollspy" style="margin-top: 50px">
+        <div>
+        <div class="row">
+            <div class="col s12 subject"><p>LinkedIn</p></div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s5"><img class="leftContent" alt="Linkedin Profile" src="/img/linkedin1.png"></div>
+            <div class="col s5">
+                <p>Candidates often check our profiles. It is important to remember that you are representing Trilogy and to be a good ambassador of our brand.</p>
+
+                <p>Natalie’s profile presents herself wonderfully as a brand ambassador of Trilogy Education Services.</p>
+
+                <p>Why, you might ask?</p>
+            </div>
+            <div class="col s1"></div>
+        </div>
+    </div>
+
+    <!--row 2-->
+    <div id="brand" class="section scrollspy" >
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s5"><img class="leftContent" alt="Linkedin Profile" src="/img/linkedin2.png"></div>
+            <div class="col s5">
+                <h4>Five big reasons:</h4>
+                <p>1. She has a professional photo.<br>
+                    Are you camera shy? You can use our brand logo as your profile picture.
+                    <br><br>
+
+                    <!-- Modal Trigger -->
+                    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Get Trilogy Logo</a>
+
+                    <!-- Modal Structure -->
+                    <div id="modal1" class="modal">
+                        <div class="modal-content">
+                            <h4>Brand Logo</h4>
+                            <img style="width:50%;" alt="Trilogy Logo" src="/img/linkedin4.png">
+                         </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-red btn-flat">Close</a>
+            </div>
+
+        </div>
+
+                </p>
+                <p>2. Her headline tells us her role and that she works for Trilogy Education Services.</p>
+
+                <p>3. Her profile summary shows us her personality and what matters most to her in a professional manner.</p>
+            </div>
+            <div class="col s1"></div>
+        </div>
+    </div>
+
+    <!--row 3-->
+    <div>
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s5"><img class="leftContent" alt="Linkedin Profile" src="/img/linkedin3.png"></div>
+            <div class="col s5">
+                <p>4. Everyone, even people who are not a connection of yours, can view your activity on LinkedIn. This includes your likes and comments on posts. Natalie’s activity is professional and shows her interest in self-improvement and our brand.</p>
+                <p>5. If you can, put the standard Trilogy message that Natalie used into the ‘Experience’ section of your LinkedIn profile.</p>
+            </div>
+            <div class="col s1"></div>
+        </div>
+    </div>
+<br><br>
+    <!--row 4-->
+    <div id="summary" class="section scrollspy" >
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s10" style="border: solid; border-color: #82e3f6;">
+
+                <p>“Trilogy is a Workforce Accelerator that partners with the world's leading universities to help companies bridge the digital skills gap.
+
+                    Thousands of students have successfully completed Trilogy-powered programs, and 1,500+ companies—ranging from start-ups to the Fortune 500—employ them. More than 30 institutions including Northwestern SPS, UC Berkeley Extension, and the University of Toronto partner with Trilogy to train today’s workforce with tomorrow’s skills. Current programs include Web Development, Data Analytics & Visualization, UX/UI, and Cybersecurity.”
+
+                    Trilogy is growing. Fast. From instructors to admissions advisors (and everything in between), we depend on those who share the passion for and commitment to our mission.
+                </p>
+            </div>
+            <div class="col s1"></div>
+        </div>
+    </div>
+    <div>
+        <div class="row">
+            <div class="col s6"><a class="btn back" href="/">Back</a></div>
+            <div class="col s6"><a class="btn next" id="complete" data-name="linkedin" href="/">Next</a></div>
+        </div>
+    </div>
+</div> <!--end of content-->

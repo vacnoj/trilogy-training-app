@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var db = require('./../models/user');
 
 // Get Homepage
 router.get('/', ensureAuthenticated, function(req, res){
@@ -71,6 +72,34 @@ router.get('/team', ensureAuthenticated, function(req,res) {
 	var user = req.user;
 	res.render('team', {user});
 });
+
+router.get('/evolve', ensureAuthenticated, function(req,res) {
+    var user = req.user;
+    res.render('evolve', {user});
+});
+
+router.get('/quiz', ensureAuthenticated, function(req,res) {
+    var user = req.user;
+    res.render('quiz', {user});
+});
+
+router.put('/submitTrilogy',ensureAuthenticated, function(req, res) {
+	var userID = req.user._id;
+	var moduleN = req.body.name
+	var newmoduleN = moduleN.replace(/^"(.*)"$/, '$1');
+	console.log(newmoduleN)
+	db.findOneAndUpdate({_id: userID}, {[newmoduleN]: true}, {new: true},)
+	.then(function(userC) {
+		// If the User was updated successfully, send it back to the client
+		res.json(userC);
+		
+		console.log(userC)
+	  })
+	  .catch(function(err) {
+		// If an error occurs, send it back to the client
+		res.json(err);
+	  });
+})
 
 function ensureAuthenticated(req, res, next){
 	if(req.isAuthenticated()){

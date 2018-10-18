@@ -219,7 +219,7 @@ strong {
 }
 
 .btn{
-    background-color: #2d90a3;
+    background-color: #27afca;
 }
 
 .btn:hover, .btn-large:hover, .btn-small:hover{
@@ -240,5 +240,6 @@ strong {
 
 .mainmenu {
     margin-bottom: 6px
+    
 }
 

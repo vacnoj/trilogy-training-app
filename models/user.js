@@ -67,6 +67,16 @@ var UserSchema = mongoose.Schema({
 		type: Boolean,
 		default: false
 		
+	},
+	evolve: {
+		type: Boolean,
+		default: false
+		
+	},
+	progress: {
+		type: Number,
+		default: 0
+		
 	}	
 });
 

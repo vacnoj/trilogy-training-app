@@ -19,6 +19,10 @@ p {
     font-family: freight-micro-pro, Helvetica,Arial,sans-serif;
 }
 
+.menu-items {
+    text-align: center;
+}
+
 .navbar-fixed {
     background-color: white;
     height: 10%px;
@@ -65,6 +69,12 @@ p {
     text-align: center;
     margin-top: 10px;
 }
+.page-name {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    
+}
 
 .login {
     margin-left: 40px;
@@ -77,7 +87,7 @@ p {
     font-size: 30px;
     font-family: museo-sans,sans-serif;
     font-weight: 700;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-decoration-color: white;
     color: white;
     display: inline-block;

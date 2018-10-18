@@ -10,12 +10,14 @@ router.get('/', ensureAuthenticated, function(req, res){
 
 router.get('/about', ensureAuthenticated, function(req,res) {
 	var user = req.user;
+	var page = "About"
 	res.render('about', {user});
 });
 
 router.get('/adp', ensureAuthenticated, function(req,res) {
 	var user = req.user;
-	res.render('adp', {user});
+	var page = "ADP"
+	res.render('adp', {user, page});
 });
 
 router.get('/bamboo', ensureAuthenticated, function(req,res) {
@@ -85,10 +87,13 @@ router.get('/quiz', ensureAuthenticated, function(req,res) {
 
 router.put('/submitTrilogy',ensureAuthenticated, function(req, res) {
 	var userID = req.user._id;
+	var progressBar = req.user.progress;
+	var newProgress = progressBar + 8.3;
+	console.log(progressBar);
 	var moduleN = req.body.name
 	var newmoduleN = moduleN.replace(/^"(.*)"$/, '$1');
 	console.log(newmoduleN)
-	db.findOneAndUpdate({_id: userID}, {[newmoduleN]: true}, {new: true},)
+	db.findOneAndUpdate({_id: userID}, {[newmoduleN]: true, progress: newProgress }, {new: true},)
 	.then(function(userC) {
 		// If the User was updated successfully, send it back to the client
 		res.json(userC);

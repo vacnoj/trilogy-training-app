@@ -178,6 +178,16 @@ div.content {
 
 }
 
+div.content2 {
+    /* overflow: scroll; */
+    padding: 40px 0 20px 0;
+    margin-top: 100px;
+    /*margin: 200px auto 0 auto;
+    commented out because scrollspy left a big gap with this code
+    */
+
+}
+
 img.school {
     width: 100%;
 }

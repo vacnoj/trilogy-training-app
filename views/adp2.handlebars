@@ -1,0 +1,292 @@
+
+
+
+<div class="headContent">
+    {{!-- <div>
+        <div class="row">
+            <div class="col s2"></div>
+            <div class="col s8 subject"><h1>ADP</h1></div>
+            <div class="col s2"></div>
+        </div>
+    </div> --}}
+    <!--1 row-->
+    {{!-- <div>
+        <div class="row">
+            <div class="col s3"></div>
+            <div class="col s6 subject"><p>ADP</p></div>
+            <div class="col s3"></div>
+        
+        </div>
+    </div> --}}
+
+    {{!-- <div class="progress-container">
+        <div class="progress-bar-big" id="myBar" style="width: 50%"></div>
+    </div> --}}
+    <div class="progress big">
+      <div class="determinate" style="width: 0%"></div>
+  </div>
+  <div class="col s12">
+      <ul class="tabs tabs-fixed-width">
+        <li class="tab col s3"><a href="#next1">Signup</a></li>
+        <li class="tab col s3"><a href="#next2">Timecard</a></li>
+        <li class="tab col s3"><a href="#next3">Pay/Taxes</a></li>
+        <li class="tab col s3"><a href="#next4">Benefits</a></li>
+        <li class="tab col s3"><a href="#next5">Mobile App</a></li>
+      </ul>
+    </div>
+</div> <!--end of headContent-->
+{{!-- <div class="col s12">
+      <ul class="tabs tabs-fixed-width">
+        <li class="tab col s3"><a href="#next1">Signup</a></li>
+        <li class="tab col s3"><a href="#next2">Timecard</a></li>
+        <li class="tab col s3"><a href="#next3">Pay/Taxes</a></li>
+        <li class="tab col s3"><a href="#next4">Benefits</a></li>
+        <li class="tab col s3"><a href="#next5">Mobile App</a></li>
+      </ul>
+    </div> --}}
+<div class ="content2">
+    <!--2 row-->
+    <div id="next1" class="col s12">
+    <div >
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s10">
+                {{!-- <h2>ADP</h2>
+                 <p>{{user}}</p> --}}
+                <h6>ADP is the employee self service website that we utilize to provide you with the following information:</h6> <p>Direct access to your employee records and company information and the ability to access 24/7. You can update the following: Tax-withholding specifications, direct deposit information. You can also view the following: Pay statements, Annual statement (Form W-2).</p>
+            </div>
+            <div class="col s1"></div>
+        </div>
+        {{!-- <div class="row">
+        <div class="col s6"><a class="btn back" href="/">Back</a></div>
+         <div class="col s6"><a  id="next" class="btn next" data-path="next2" >Next</a></div>
+         </div> --}}
+    </div>
+
+    <!--3 row-->
+    <div >
+        {{!-- id="next2" class="col s12" --}}
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s5">
+                <h4>Registering for ADP</h4>
+
+                <p>Go to website: <a target="_blank" href="https://workforcenow.adp.com/public/index.htm">ADP</a></p>
+
+                <p>Click ‘Register Here</p>
+            </div>
+            <div class="col s5"><img class="rightContent" alt="ADP Login Screen" src="/img/adp1.png"></div>
+            <div class="col s1"></div>
+        </div>
+        
+        {{!-- <div class="row">
+        <div class="col s6"><a class="btn back" href="/">Back</a></div>
+         <div class="col s6"><a  id="next" class="btn next" data-path="next3" >Next</a></div>
+         </div> --}}
+    </div>
+        <!--Trying in see if I can enlarge the images
+        <div class="modal fade" id="enlargeImageModal" tabindex="-1" role="dialog" aria-labelledby="enlargeImageModal" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="" class="enlargeImageModalSource" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <!--<script>
+            $(function() {
+                $('img').on('click', function() {
+                    $('.enlargeImageModalSource').attr('src', $(this).attr('src'));
+                    console.log("this ran");
+                    $('#enlargeImageModal').modal('show');
+                    console.log($('#enlargeImageModal').val())
+
+                });
+            });
+        </script>-->
+    <!--4 row-->
+    <div >
+        {{!-- id="next3" class="col s12" --}}
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s5 ">
+                <p>Type in Trilogy Education Services employee code:<br><br> <strong>TRILOGYED-1234</strong></p>
+
+                <p>Click ‘Yes’ when prompted if you want to set up an account with Trilogy Education.</p>
+
+                <p>Fill in appropriate information to verify your identity and finish creating your account.</p>
+            </div>
+
+            <div class="col s5"><img class="rightContent" alt="ADP Create an Account" src="/img/adp2.png"></div>
+            <div class="col s1"></div>
+        </div>
+        <div class="row">
+        <div class="col s6"><a class="btn back" href="/">Back</a></div>
+         <div class="col s6"><a  id="next" class="btn next" data-path="next2" >Next</a></div>
+         </div>
+    </div>
+    </div>
+    <!--5 row-->
+    <div class="row" id="next2" class="col s12">
+        <div >
+            <div class="col s1"></div>
+            <div class="col s5">
+                <h4>Completing Your Time & Attendance Tasks</h4>
+
+                <p>Easily clock in and clock out here. </p>
+
+                <p>If an entry is missed, inform your manager(s) via Slack direct message. Adding a note on your timecard does not notify your manager and they will not see it.</p>
+
+            </div>
+            <div class="col s5"><img class="rightContent" alt="ADP Login Screen" src="/img/adp3.png"></div>
+            <div class="col s1"></div>
+        </div>
+        
+    
+
+    <!--6 row-->
+    <div>
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s5">
+                <h5>Timecard:</h5>
+
+                <p>Here you can view your timecard of current and previous pay periods.</p>
+
+            </div>
+            <div class="col s5"><img class="rightContent" alt="ADP Timecard" src="/img/adp4.png"></div>
+            <div class="col s1"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6"><a class="btn back" href="/">Back</a></div>
+         <div class="col s6"><a  id="next" class="btn next" data-path="next3" >Next</a></div>
+         </div>
+    </div>
+
+    <!--7 row-->
+    <div class="row" id="next3" class="col s12">
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s5">
+                <h4>Information on Pay</h4>
+
+                <p>Access pay statements quickly via the homepage.</p>
+
+            </div>
+            <div class="col s5"><img class="rightContent" alt="ADP Informaiton on Pay" src="/img/adp5.png"></div>
+            <div class="col s1"></div>
+        </div>
+    
+
+    <!--8 row-->
+    <div>
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s5">
+                <p>Also access more information here:</p>
+                    <ul style="list-style-type:disc">
+                        <span class="bullet"><li>Update the following: Tax-withholding specifications and direct deposit information</li></span>
+                        <span class="bullet"><li> View the following: pay statements, annual statements (Form W-2)</li></span>
+                        <span class="bullet"><li>Utilize the calculators; ADP offers financial tools to aid with: Salary Paycheck Calculator, Hourly Paycheck Calculator, Gross Pay Calculator, 401k Planner, 403(b) Planner, and W-4 Assistant</li></span>
+                    </ul>
+            </div>
+            <div class="col s5"><img class="rightContent" alt="ADP Access Info" src="/img/adp6.png"></div>
+            <div class="col s1"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6"><a class="btn back" href="/">Back</a></div>
+         <div class="col s6"><a  id="next" class="btn next" data-path="next4" >Next</a></div>
+         </div>
+    </div>
+    </div>
+
+    <!--9 row-->
+    <div class="row" id="next4" class="col s12">
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s5">
+                <h4>Access Employee Benefits</h4>
+                <p>Via the Homepage, ADP News will show various ‘News’ and you will be able to click<br>
+                    ‘Your Employee Discounts’.
+                </p>
+
+            </div>
+            <div class="col s5"><img class="rightContent" alt="ADP Access Info" src="/img/adp7.png"></div>
+            <div class="col s1"></div>
+        </div>
+    
+
+    <!--10 row-->
+    <div>
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s5">
+                <p>The link will bring you to LifeMart, a website which provides various discounts.</p>
+
+            </div>
+            <div class="col s5"><img class="rightContent" alt="ADP Access Info" src="/img/adp8.png"></div>
+            <div class="col s1"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6"><a class="btn back" href="/">Back</a></div>
+         <div class="col s6"><a  id="next" class="btn next" data-path="next5" >Next</a></div>
+         </div>
+    </div>
+    </div>
+
+    <!--11 row-->
+    <div class="row" id="next5" class="col s12">
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s5">
+                <h4>ADP Mobile</h4>
+                <p>Stay connected to company information on your mobile device! ADP Mobile provides a convenient way to access payroll, time and attendance, benefits and other vital HR information. Some information may not be accessible on the app.</p>
+            </div>
+            <div class="col s5"></div>
+            <div class="col s1"></div>
+        </div>
+    
+
+    <!--12 row-->
+    <div>
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s10">
+                <img class="center" alt="ADP Access Info" src="/img/mobile.png">
+            </div>
+            <div class="col s1"></div>
+        </div>
+    </div>
+
+    <!--13 row-->
+    <div>
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s5">
+                <p>You are able to:</p>
+                <ul style="list-style-type:disc">
+                    <span class="bullet"><li>Update the following: Tax-withholding specifications and direct deposit information</li></span>
+                    <span class="bullet"><li>View the following: pay statements, annual statements (Form W-2)</li></span>
+                    <span class="bullet"><li>Utilize the calculators; ADP offers financial tools to aid with: Salary Paycheck Calculator, Hourly Paycheck Calculator, Gross Pay Calculator, 401k Planner, 403(b) Planner, and W-4 Assistant</li></span>
+                </ul>
+            </div>
+            <div class="col s5"></div>
+            <div class="col s1"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6"><a class="btn back" href="/">Back</a></div>
+         <div class="col s6"><a  id="complete" data-name="adp" class="btn next" data-path="next5" href="/" >Next</a></div>
+         </div>
+    </div>
+    </div>
+
+
+</div> <!--end of content div-->

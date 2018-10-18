@@ -17,7 +17,12 @@ router.get('/about', ensureAuthenticated, function(req,res) {
 router.get('/adp', ensureAuthenticated, function(req,res) {
 	var user = req.user;
 	var page = "ADP"
-	res.render('adp', {user, page});
+	res.render('adp', {user});
+});
+
+router.get('/adp2', ensureAuthenticated, function(req,res) {
+	var user = req.user;
+	res.render('adp2', {user});
 });
 
 router.get('/bamboo', ensureAuthenticated, function(req,res) {
@@ -88,9 +93,17 @@ router.get('/quiz', ensureAuthenticated, function(req,res) {
 router.put('/submitTrilogy',ensureAuthenticated, function(req, res) {
 	var userID = req.user._id;
 	var progressBar = req.user.progress;
-	var newProgress = progressBar + 8.3;
-	console.log(progressBar);
+	var newProgress;
 	var moduleN = req.body.name
+	console.log(req.user.moduleN)
+	if (req.user.moduleN === false) {
+		newProgress = progressBar
+	} else {
+		newProgress = progressBar + 8.3;
+	}
+	
+	console.log(progressBar);
+	
 	var newmoduleN = moduleN.replace(/^"(.*)"$/, '$1');
 	console.log(newmoduleN)
 	db.findOneAndUpdate({_id: userID}, {[newmoduleN]: true, progress: newProgress }, {new: true},)

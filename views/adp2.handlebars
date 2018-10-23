@@ -1,56 +1,71 @@
 
-<!--header row-->
+
+
 <div class="headContent">
-    <!--<div>
+    {{!-- <div>
         <div class="row">
-            <div class="col s12 trilogyHeader"><h1>Orientation</h1></div>
+            <div class="col s2"></div>
+            <div class="col s8 subject"><h1>ADP</h1></div>
+            <div class="col s2"></div>
         </div>
-    </div>-->
+    </div> --}}
     <!--1 row-->
     {{!-- <div>
         <div class="row">
-            <div class="col s12 subject"><p>ADP</p></div>
+            <div class="col s3"></div>
+            <div class="col s6 subject"><p>ADP</p></div>
+            <div class="col s3"></div>
+        
         </div>
     </div> --}}
 
-    <div class ="row">
-        <div class="section table-of-contents">
-            <div class="col s2 menu-items"><a href="#intro">Intro</a></div>
-            <div class="col s2 menu-items"><a href="#registering">Registering</a></div>
-            <div class="col s2 menu-items"><a href="#time">Time</a></div>
-            <div class="col s2 menu-items"><a href="#pay">Pay</a></div>
-            <div class="col s2 menu-items"><a href="#benefits">Benefits</a></div>
-            <div class="col s2 menu-items"><a href="#mobile">Mobile</a></div>
-        </div>
+    {{!-- <div class="progress-container">
+        <div class="progress-bar-big" id="myBar" style="width: 50%"></div>
+    </div> --}}
+    <div class="progress big">
+      <div class="determinate" style="width: 0%"></div>
+  </div>
+  <div class="col s12">
+      <ul class="tabs tabs-fixed-width">
+        <li class="tab col s3"><a href="#next1">Signup</a></li>
+        <li class="tab col s3"><a href="#next2">Timecard</a></li>
+        <li class="tab col s3"><a href="#next3">Pay/Taxes</a></li>
+        <li class="tab col s3"><a href="#next4">Benefits</a></li>
+        <li class="tab col s3"><a href="#next5">Mobile App</a></li>
+      </ul>
     </div>
-    <!--end of table of contents-->
-    <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
-    </div>
-</div>
-<!--end of headContent-->
-
-
-
-<div class ="content">
+</div> <!--end of headContent-->
+{{!-- <div class="col s12">
+      <ul class="tabs tabs-fixed-width">
+        <li class="tab col s3"><a href="#next1">Signup</a></li>
+        <li class="tab col s3"><a href="#next2">Timecard</a></li>
+        <li class="tab col s3"><a href="#next3">Pay/Taxes</a></li>
+        <li class="tab col s3"><a href="#next4">Benefits</a></li>
+        <li class="tab col s3"><a href="#next5">Mobile App</a></li>
+      </ul>
+    </div> --}}
+<div class ="content2">
     <!--2 row-->
-    <div id="intro" class="section scrollspy" style="margin-top: 50px">
-       <div>
-            <div class="row">
-                <div class="col s12 subject"><p>ADP</p></div>
-            </div>
-        </div>
+    <div id="next1" class="col s12">
+    <div >
         <div class="row">
             <div class="col s1"></div>
             <div class="col s10">
-                <p>ADP is the employee self service website that we utilize to provide you with the following information: Direct access to your employee records and company information and the ability to access 24/7. You can update the following: Tax-withholding specifications, direct deposit information. You can also view the following: Pay statements, Annual statement (Form W-2).</p>
+                {{!-- <h2>ADP</h2>
+                 <p>{{user}}</p> --}}
+                <h6>ADP is the employee self service website that we utilize to provide you with the following information:</h6> <p>Direct access to your employee records and company information and the ability to access 24/7. You can update the following: Tax-withholding specifications, direct deposit information. You can also view the following: Pay statements, Annual statement (Form W-2).</p>
             </div>
             <div class="col s1"></div>
         </div>
+        {{!-- <div class="row">
+        <div class="col s6"><a class="btn back" href="/">Back</a></div>
+         <div class="col s6"><a  id="next" class="btn next" data-path="next2" >Next</a></div>
+         </div> --}}
     </div>
 
     <!--3 row-->
-    <div id="registering" class="section scrollspy">
+    <div >
+        {{!-- id="next2" class="col s12" --}}
         <div class="row">
             <div class="col s1"></div>
             <div class="col s5">
@@ -63,6 +78,11 @@
             <div class="col s5"><img class="rightContent" alt="ADP Login Screen" src="/img/adp1.png"></div>
             <div class="col s1"></div>
         </div>
+        
+        {{!-- <div class="row">
+        <div class="col s6"><a class="btn back" href="/">Back</a></div>
+         <div class="col s6"><a  id="next" class="btn next" data-path="next3" >Next</a></div>
+         </div> --}}
     </div>
         <!--Trying in see if I can enlarge the images
         <div class="modal fade" id="enlargeImageModal" tabindex="-1" role="dialog" aria-labelledby="enlargeImageModal" aria-hidden="true">
@@ -89,7 +109,8 @@
             });
         </script>-->
     <!--4 row-->
-    <div>
+    <div >
+        {{!-- id="next3" class="col s12" --}}
         <div class="row">
             <div class="col s1"></div>
             <div class="col s5 ">
@@ -103,11 +124,15 @@
             <div class="col s5"><img class="rightContent" alt="ADP Create an Account" src="/img/adp2.png"></div>
             <div class="col s1"></div>
         </div>
-    </div>
-
-    <!--5 row-->
-    <div id="time" class="section scrollspy">
         <div class="row">
+        <div class="col s6"><a class="btn back" href="/">Back</a></div>
+         <div class="col s6"><a  id="next" class="btn next" data-path="next2" >Next</a></div>
+         </div>
+    </div>
+    </div>
+    <!--5 row-->
+    <div class="row" id="next2" class="col s12">
+        <div >
             <div class="col s1"></div>
             <div class="col s5">
                 <h4>Completing Your Time & Attendance Tasks</h4>
@@ -120,7 +145,8 @@
             <div class="col s5"><img class="rightContent" alt="ADP Login Screen" src="/img/adp3.png"></div>
             <div class="col s1"></div>
         </div>
-    </div>
+        
+    
 
     <!--6 row-->
     <div>
@@ -136,9 +162,14 @@
             <div class="col s1"></div>
         </div>
     </div>
+    <div class="row">
+        <div class="col s6"><a class="btn back" href="/">Back</a></div>
+         <div class="col s6"><a  id="next" class="btn next" data-path="next3" >Next</a></div>
+         </div>
+    </div>
 
     <!--7 row-->
-    <div id="pay" class="section scrollspy">
+    <div class="row" id="next3" class="col s12">
         <div class="row">
             <div class="col s1"></div>
             <div class="col s5">
@@ -150,7 +181,7 @@
             <div class="col s5"><img class="rightContent" alt="ADP Informaiton on Pay" src="/img/adp5.png"></div>
             <div class="col s1"></div>
         </div>
-    </div>
+    
 
     <!--8 row-->
     <div>
@@ -168,9 +199,15 @@
             <div class="col s1"></div>
         </div>
     </div>
+    <div class="row">
+        <div class="col s6"><a class="btn back" href="/">Back</a></div>
+         <div class="col s6"><a  id="next" class="btn next" data-path="next4" >Next</a></div>
+         </div>
+    </div>
+    </div>
 
     <!--9 row-->
-    <div id="benefits" class="section scrollspy">
+    <div class="row" id="next4" class="col s12">
         <div class="row">
             <div class="col s1"></div>
             <div class="col s5">
@@ -183,7 +220,7 @@
             <div class="col s5"><img class="rightContent" alt="ADP Access Info" src="/img/adp7.png"></div>
             <div class="col s1"></div>
         </div>
-    </div>
+    
 
     <!--10 row-->
     <div>
@@ -197,9 +234,15 @@
             <div class="col s1"></div>
         </div>
     </div>
+    <div class="row">
+        <div class="col s6"><a class="btn back" href="/">Back</a></div>
+         <div class="col s6"><a  id="next" class="btn next" data-path="next5" >Next</a></div>
+         </div>
+    </div>
+    </div>
 
     <!--11 row-->
-    <div id="mobile" class="section scrollspy">
+    <div class="row" id="next5" class="col s12">
         <div class="row">
             <div class="col s1"></div>
             <div class="col s5">
@@ -209,7 +252,7 @@
             <div class="col s5"></div>
             <div class="col s1"></div>
         </div>
-    </div>
+    
 
     <!--12 row-->
     <div>
@@ -238,17 +281,12 @@
             <div class="col s1"></div>
         </div>
     </div>
+    <div class="row">
+        <div class="col s6"><a class="btn back" href="/">Back</a></div>
+         <div class="col s6"><a  id="complete" data-name="adp" class="btn next" data-path="next5" href="/" >Next</a></div>
+         </div>
+    </div>
+    </div>
 
 
 </div> <!--end of content div-->
-
-<br>
-
-<!--Next and Back Buttons at the end of the page-->
-<div>
-    <div class="row">
-        <div class="col s6"><a class="btn back" href="/">Back</a></div>
-        <div class="col s6"><a class="btn next" id="complete" data-name="adp" href="/">Next</a></div>
-    </div>
-</div>
-

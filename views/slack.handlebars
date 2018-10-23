@@ -1,23 +1,23 @@
 <!--header row-->
-<div class="headContent" xmlns="http://www.w3.org/1999/html">
+<div class="headContent" >
+    {{!-- xmlns="http://www.w3.org/1999/html" --}}
     <!--first row-->
-    <div>
+    {{!-- <div>
         <div class="row">
             <div class="col s12 subject"><p>Slack</p></div>
         </div>
-    </div>
+    </div> --}}
     <div class ="row">
         <div class="section table-of-contents">
-            <div class="col s2"><a href="#intro">Intro</a></div>
-            <div class="col s2"><a href="#start">Start</a></div>
-            <div class="col s2"><a href="#connect">Connect</a></div>
-            <div class="col s2"><a href="#ping">Ping</a></div>
-            <div class="col s2"><a href="#access">Access</a></div>
-            <div class="col s2"><a href="#extra">Extra</a></div>
+            <div class="col s2 menu-items"><a href="#intro">Intro</a></div>
+            <div class="col s2 menu-items"><a href="#start">Start</a></div>
+            <div class="col s2 menu-items"><a href="#connect">Connect</a></div>
+            <div class="col s2 menu-items"><a href="#ping">Ping</a></div>
+            <div class="col s2 menu-items"><a href="#access">Access</a></div>
+            <div class="col s2 menu-items"><a href="#extra">Extra</a></div>
         </div>
     </div>
     <!--end of table of contents-->
-
     <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
     </div>
@@ -27,6 +27,11 @@
 
     <!--row1-->
     <div id="intro" class="section scrollspy" style="margin-top: 50px">
+        <div>
+        <div class="row">
+            <div class="col s12 subject"><p>Slack</p></div>
+        </div>
+    </div>
         <div class="row">
             <div class="col s1"></div>
             <div class="col s10">
@@ -35,7 +40,6 @@
             <div class="col s1"></div>
         </div>
     </div>
-
     <!--row 1.A-->
     <div id="start" class="section scrollspy" style="margin-top: 50px">
         <div class="row">
@@ -206,7 +210,6 @@
             <div class="col s1"></div>
         </div>
     </div>
-
     <!--row9-->
     <div id="extra" class="section scrollspy" style="margin-top: 50px">
         <div class="row">
@@ -229,7 +232,7 @@
     <div>
         <div class="row">
             <div class="col s6"><a class="btn back" href="/">Back</a></div>
-            <div class="col s6"><a class="btn next">Next</a></div>
+            <div class="col s6"><a class="btn next" id="complete" data-name="slack" href="/">Next</a></div>
         </div>
     </div>
 </div> <!--end of content-->

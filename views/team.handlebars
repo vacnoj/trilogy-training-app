@@ -1,19 +1,21 @@
 <!--header row-->
 <div class="headContent">
     <!--first row-->
-    <div>
+    {{!-- <div>
         <div class="row">
             <div class="col s12 subject"><p>Team</p></div>
         </div>
-    </div>
+    </div> --}}
 
     <div class ="row">
         <div class="section table-of-contents">
-            <div class="col s2"><a href="#intro">Intro</a></div>
-            <div class="col s2"><a href="#headDept">Dept Head</a></div>
-            <div class="col s2"><a href="#managers">Managers</a></div>
-            <div class="col s2"><a href="#recruiters">Recruiters</a></div>
-            <div class="col s2"><a href="#leads">Leads</a></div>
+            <div class="col s1"></div>
+            <div class="col s2 menu-items"><a href="#intro">Intro</a></div>
+            <div class="col s2 menu-items"><a href="#headDept">Dept Head</a></div>
+            <div class="col s2 menu-items"><a href="#managers">Managers</a></div>
+            <div class="col s2 menu-items"><a href="#recruiters">Recruiters</a></div>
+            <div class="col s2 menu-items"><a href="#leads">Leads</a></div>
+            <div class="col s1 menu-items"></div>
         </div>
     </div>
     <!--end of table of contents-->
@@ -26,6 +28,11 @@
 <div class ="content">
     <!--row 2-->
     <div id="intro" class="section scrollspy" style="margin-top: 50px">
+        <div>
+        <div class="row">
+            <div class="col s12 subject"><p>Team</p></div>
+        </div>
+    </div>
         <div class="row">
             <div class="col s1"></div>
            <!-- <div class="col s10"><p><div style="width: 100%; height: 480px; margin: 10px;"><iframe allowfullscreen frameborder="0" style="width:100%; height:480px" src="https://www.lucidchart.com/documents/embeddedchart/f3c9edd2-bef6-435c-850f-983a0e5fb3e7" id="bU8buqCUf621"></iframe></div></p>-->
@@ -85,6 +92,7 @@
             </div>
         </div>
     </div>
+</div> <!--end of headContent-->
 
     <!--row4 managers-->
     <div>
@@ -245,7 +253,7 @@
     <div>
         <div class="row">
             <div class="col s6"><a class="btn back" href="/">Back</a></div>
-            <div class="col s6"><a class="btn next">Next</a></div>
+            <div class="col s6"><a class="btn next" id="complete" data-name="team" href="/">Next</a></div>
         </div>
     </div>
 </div> <!--end of content-->

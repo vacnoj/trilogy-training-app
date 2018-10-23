@@ -19,8 +19,13 @@ p {
     font-family: freight-micro-pro, Helvetica,Arial,sans-serif;
 }
 
+.menu-items {
+    text-align: center;
+}
+
 .navbar-fixed {
     background-color: white;
+    height: 10%px;
 }
 
 #logo {
@@ -64,6 +69,12 @@ p {
     text-align: center;
     margin-top: 10px;
 }
+.page-name {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    
+}
 
 .login {
     margin-left: 40px;
@@ -71,18 +82,17 @@ p {
 
 .subject {
     background-color: #2d90a3;
-    margin-top: 10px;
+    margin-top: 0px;
     text-align: center;
     font-size: 30px;
     font-family: museo-sans,sans-serif;
     font-weight: 700;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-decoration-color: white;
     color: white;
-    /*text-decoration-color: #2d90a3;
-    color: #2d90a3;*/
     display: inline-block;
     position: relative;
+    height: 7%;
 }
 
 #rutgers {
@@ -161,11 +171,18 @@ img.leftContent {
 
 div.content {
     overflow: scroll;
-    padding: 100px 0;
+    /*padding: 100px 0;*/
+    padding: 10px 0 20px 0;
     /*margin: 200px auto 0 auto;
-    commented out because scrollspy left a big gap with this code
-    */
+    commented out because scrollspy left a big gap with this code */
+}
 
+div.content2 {
+    /* overflow: scroll; */
+    padding: 40px 0 20px 0;
+    margin-top: 100px;
+    /*margin: 200px auto 0 auto;
+    commented out because scrollspy left a big gap with this code */
 }
 
 img.school {
@@ -205,7 +222,20 @@ strong {
 }
 
 .btn{
-    background-color: #2d90a3;
+    background-color: #27afca;
+    padding-top: 10px;
+}
+
+.table-of-contents a.active {
+    border-left: 2px solid #35c2e1
+}
+
+.table-of-contents a:hover {
+    border-left: 1px solid #35c2e1
+}
+
+.btn{
+    background-color: #27afca;
 }
 
 .btn:hover, .btn-large:hover, .btn-small:hover{
@@ -224,16 +254,22 @@ strong {
     margin-bottom: 20px;
 }
 
-.pageNav {
+
+/*.pageNav {
     justify-content: center;
     display: flex;
-    /* align-items: center; */
-    /*text-align: center;*/
+    !* align-items: center; *!
+    !*text-align: center;*!
 }
 
 a.pageNav {
     padding-right: 10px;
     padding-left: 10px;
+}*/
+
+.mainmenu {
+    margin-bottom: 6px
+    
 }
 
 

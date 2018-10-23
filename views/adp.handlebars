@@ -244,13 +244,61 @@
 
 </div> <!--end of content div-->
 
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div clas="row">
+        <div class="col s12">
+            <h3>True or False: I left a note on my timecard for my manager about a missed time entry, they will see this and adjust it accordingly.?</h3>
+              <form id="quizthing">
+    <p>
+      <label>
+        <input name="group1" type="radio" />
+        <span>True</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input name="correctAnswer" type="radio" />
+        <span>False</span>
+      </label>
+    </p>
+
+  </form>
+        
+        </div>
+    </div>
+    </div>
+    <div class="modal-footer">
+      {{!-- <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a> --}}
+      <a class="btn next modal-close" id="submitQuiz">Submit</a>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>That's Right! Make sure you inform your manager directly via Slack if you need a time to be edited.</h4>
+    </div>
+    <div class="modal-footer">
+      <a href="/" class="btn modal-close waves-effect" id="complete" data-name="adp">Continue</a>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <h4>Looks like you might need to review this content.</h4>
+    </div>
+    <div class="modal-footer">
+      <a href="/adp" class="btn modal-close waves-effect">Review</a>
+    </div>
+  </div>
 <br>
 
 <!--Next and Back Buttons at the end of the page-->
 <div>
     <div class="row">
         <div class="col s6"><a class="btn back" href="/">Back</a></div>
-        <div class="col s6"><a class="btn next" id="complete" data-name="adp" href="/">Next</a></div>
+        <div class="col s6"><a class="btn next modal-trigger" id="complete" data-name="adp" href="#modal1">Next</a></div>
     </div>
 </div>
 

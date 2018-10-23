@@ -39,6 +39,29 @@ $(function() {
           );
     });
 
+    $("#submitQuiz").on("click", function(event) {
+        if ($("input[name=correctAnswer]:checked").length > 0) {
+            $("#modal2").modal("open");
+        } else {
+            $("#modal3").modal("open");
+        }
+        // var moduleName = $(this).attr("data-name");
+        // var moduleHolder = {
+        //     name: moduleName
+        // }
+        // console.log(moduleName)
+        // console.log("test")
+        // $.ajax("/submitTrilogy", {
+        //     type: "Put",
+        //     data: moduleHolder
+        //   }).then(
+        //     function() {
+        //       console.log("Success");
+             
+        //     }
+        //   );
+    });
+
    
     var progressBar = 0;
     $(document).ready(function() {

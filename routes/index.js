@@ -96,8 +96,11 @@ router.put('/submitTrilogy',ensureAuthenticated, function(req, res) {
 	var newProgress;
 	var moduleN = req.body.name
 	console.log(req.user.moduleN)
-	if (req.user.moduleN === false) {
+	modulesName = req.user[moduleN];
+	console.log("This is it__>" + modulesName)
+	if (modulesName === true) {
 		newProgress = progressBar
+		console.log("this worked")
 	} else {
 		newProgress = progressBar + 8.3;
 	}

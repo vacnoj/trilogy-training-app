@@ -14,21 +14,21 @@
               <div class="progress">
             <div class="determinate" style="width: {{user.progress}}%"></div>
          </div>
-              <a class="btn btn-block mainmenu" href="/trilogy">Trilogy</a>
+              <a class="btn btn-block mainmenu" href="/trilogy">Trilogy{{#if user.trilogy}}<i class="material-icons">check</i>{{/if}}</a>
               {{!-- <a class="btn btn-block mainmenu" href="/policies">Policies</a> --}}
-              <a class="btn btn-block mainmenu" href="/team">Team Members</a>
+              <a class="btn btn-block mainmenu" href="/team">Team Members{{#if user.team}}<i class="material-icons">check</i>{{/if}}</a>
               {{!-- <a class="btn btn-block mainmenu" href="/jobrole">Job Role</a> --}}
-              <a class="btn btn-block mainmenu" href="/calendar">Availability Calendar</a>
-              <a class="btn btn-block mainmenu" href="/adp">ADP</a>
+              <a class="btn btn-block mainmenu" href="/calendar">Availability Calendar{{#if user.calendar}}<i class="material-icons">check</i>{{/if}}</a>
+              <a class="btn btn-block mainmenu" href="/adp">ADP{{#if user.adp}}<i class="material-icons">check</i>{{/if}}</a>
               <a class="btn btn-block mainmenu" href="/adp2">ADP2</a>
-              <a class="btn btn-block mainmenu" href="/email">Email</a>
-              <a class="btn btn-block mainmenu" href="/slack">Slack</a>
-              <a class="btn btn-block mainmenu" href="/linkedin">LinkedIN</a>
-              <a class="btn btn-block mainmenu" href="/bamboo">Bamboo</a>
+              <a class="btn btn-block mainmenu" href="/email">Email{{#if user.mail}}<i class="material-icons">check</i>{{/if}}</a>
+              <a class="btn btn-block mainmenu" href="/slack">Slack{{#if user.slack}}<i class="material-icons">check</i>{{/if}}</a>
+              <a class="btn btn-block mainmenu" href="/linkedin">LinkedIN{{#if user.linkedin}}<i class="material-icons">check</i>{{/if}}</a>
+              <a class="btn btn-block mainmenu" href="/bamboo">Bamboo{{#if user.bamboo}}<i class="material-icons">check</i>{{/if}}</a>
               {{!-- <a class="btn btn-block" href="/communicator">Communicator</a> --}}
-              <a class="btn btn-block mainmenu" href="/salesforce">Sales Force</a>
-              <a class="btn btn-block mainmenu" href="/talentpool">Talent Pool</a>
-              <a class="btn btn-block mainmenu" href="/evolve">Evolve</a>
+              <a class="btn btn-block mainmenu" href="/salesforce">Sales Force{{#if user.salesforce}}<i class="material-icons">check</i>{{/if}}</a>
+              <a class="btn btn-block mainmenu" href="/talentpool">Talent Pool{{#if user.talentpool}}<i class="material-icons">check</i>{{/if}}</a>
+              <a class="btn btn-block mainmenu" href="/evolve">Evolve{{#if user.evolve}}<i class="material-icons">check</i>{{/if}}</a>
                 <br>
                 <a class="btn btn-block mainmenu" href="/">Quiz</a>
               {{!-- <p class="btn btn-block section-title">Interviews</p>

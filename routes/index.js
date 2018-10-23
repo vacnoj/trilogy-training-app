@@ -106,7 +106,7 @@ router.put('/submitTrilogy',ensureAuthenticated, function(req, res) {
 	
 	var newmoduleN = moduleN.replace(/^"(.*)"$/, '$1');
 	console.log(newmoduleN)
-	db.findOneAndUpdate({_id: userID}, {[newmoduleN]: true, progress: newProgress }, {new: true},)
+	db.findOneAndUpdate({_id: userID}, {[newmoduleN]: true, progress: newProgress }, {new: true})
 	.then(function(userC) {
 		// If the User was updated successfully, send it back to the client
 		res.json(userC);

@@ -38,7 +38,7 @@
         <div class="row">
             <div class="col s1"></div>
             <div class="col s10">
-                <img class="center" style="padding: 25px; width: 100%;" src="/img/TalentPool1.png">
+                <img class="center materialboxed" style="padding: 25px; width: 100%;" src="/img/TalentPool1.png">
                 <br>
                 <p>Our <a target="_blank" href="https://trilogy-recruitment.herokuapp.com/">Talent Pool</a> is what we use for academic recruitment. It is a virtual swimming pool for potential candidates sourced for utilization at a later date to help streamline the hiring process.</p>
                 <br>
@@ -111,18 +111,86 @@
                 <p>The Talent Pool is compatible with Google Chrome and is not Safari friendly.</p>
 
             </div>
-            <img class="center" style="padding: 25px; width: 100%;" src="/img/TalentPool2.png"></div>
+            <img class="center materialboxed" style="padding: 25px; width: 100%;" src="/img/TalentPool2.png"></div>
             <div class="col s1"></div>
+        </div>
+    </div>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div clas="row">
+                <div class="col s12">
+                    <h6>What is the Talent Pool?</h6>
+                    <form id="quizthing">
+                        <p>
+                            <label>
+                                <input name="group1" type="radio" />
+                                <span>The Trilogy company pool</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input name="correctAnswer" type="radio" />
+                                <span>A virtual swimming pool for potential candidates sourced for utilization at a later date</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input name="group1" type="radio" />
+                                <span>Our highest performing students from every program</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input name="group1" type="radio" />
+                                <span>All of the above</span>
+                            </label>
+                        </p>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            {{!-- <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a> --}}
+            <a class="btn next modal-close" id="submitQuiz">Submit</a>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h6>That's Right!</h6>
+        </div>
+        <div class="modal-footer">
+            <a href="/" class="btn modal-close waves-effect" id="complete" data-name="talentpool">Continue</a>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <h6>Looks like you might need to review this content.</h6>
+        </div>
+        <div class="modal-footer">
+            <a href="talentpool" class="btn modal-close waves-effect">Review</a>
+        </div>
+    </div>
+    <br>
+
+    <!--Next and Back Buttons at the end of the page-->
+    <div>
+        <div class="row">
+            <div class="col s6"><a class="btn back" href="/">Back</a></div>
+            <div class="col s6"><a class="btn next modal-trigger" data-name="salesforce" href="#modal1">Next</a></div>
         </div>
     </div>
 
 </div> <!--end of content div-->
 
-<br>
+{{!-- <br>
 <!--Next and Back Buttons at the end of the page-->
 <div>
     <div class="row">
         <div class="col s6"><a class="btn back" href="/">Back</a></div>
         <div class="col s6"><a class="btn next" id="complete" data-name="talentpool" href="/">Next</a></div>
     </div>
-</div>
+</div> --}}

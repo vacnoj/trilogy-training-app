@@ -5,8 +5,32 @@ var db = require('./../models/user');
 // Get Homepage
 router.get('/', ensureAuthenticated, function(req, res){
 	var user = req.user;
-	res.render('index');
+	var newUser = {
+		userInfo: user
+	}
+	res.render('index', {user});
 });
+
+router.get('/admin', ensureAuthenticated, function(req, res){
+	var checkAdmin = req.user.username
+	// var userNames;
+	if (checkAdmin === "jobo") {
+		db.find({})
+		.then(function(users){
+			// usersNamesnamKCes = users
+			var usersNames = {
+				names: users
+			}
+			res.render('admin', usersNames)
+			console.log(usersNames)
+			// for (let i = 0; i < usersNames.length; i++) {
+			// 	console.log(usersNames[i].username);
+			// 	res.render('admin', userNames)
+			// }
+		})
+		// res.render('admin', userNames)
+	}
+})
 
 router.get('/about', ensureAuthenticated, function(req,res) {
 	var user = req.user;
@@ -96,13 +120,16 @@ router.put('/submitTrilogy',ensureAuthenticated, function(req, res) {
 	var newProgress;
 	var moduleN = req.body.name
 	console.log(req.user.moduleN)
+	var progressAdd = (100/11)
+	var progressTest = progressBar + progressAdd;
+	console.log(progressAdd)
 	modulesName = req.user[moduleN];
 	console.log("This is it__>" + modulesName)
 	if (modulesName === true) {
 		newProgress = progressBar
 		console.log("this worked")
 	} else {
-		newProgress = progressBar + 8.3;
+		newProgress = progressBar + progressAdd;
 	}
 	
 	console.log(progressBar);
@@ -130,5 +157,7 @@ function ensureAuthenticated(req, res, next){
 		res.redirect('/users/login');
 	}
 }
+
+
 
 module.exports = router;

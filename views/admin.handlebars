@@ -1,0 +1,23 @@
+{{!-- <ul>
+    {{#each names}}
+    {{> nav/adminnav}}
+    {{/each }}
+</ul>
+</div> --}}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Progress</th>
+            <th>Edit</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {{#each names}}
+        {{> nav/adminnav}}
+        {{/each }}
+    </tbody>
+</table>
+
+</div>

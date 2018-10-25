@@ -16,6 +16,17 @@ $(document).ready(function() {
 
     $('.scrollspy').scrollSpy();
 
+    
+        $('.materialboxed').materialbox();
+      
+        function firstTimeUser() {
+            var hasUsed = $("#trilogymenu").attr("data-done");
+            if (hasUsed === "false") {
+                $("#modal1").modal("open")
+            }
+        }
+
+        firstTimeUser();
 
 });
 

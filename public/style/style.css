@@ -121,6 +121,11 @@ float: right;
     padding-top: 40px;
 }
 
+.rc {
+    filter: grayscale(100%);
+    width: 90%;
+}
+
 .teamPics {
     width: 33.33%;
     filter: grayscale(100%);
@@ -130,6 +135,13 @@ float: right;
     width: 90%;
     filter: grayscale(100%);
 }
+
+.managerPics {
+    width: 75%;
+    filter: grayscale(100%);
+}
+
+
 
 .title {
     font-weight: 900;
@@ -271,5 +283,6 @@ a.pageNav {
     margin-bottom: 6px
     
 }
+
 
 

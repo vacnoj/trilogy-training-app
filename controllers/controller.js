@@ -88,3 +88,7 @@ router.get("/users/additional", function(req, res, body) {
     var user = req.user;
     res.render('additional', { user });
 });
+router.get("/users/zoom", function(req, res, body) {
+    var user = req.user;
+    res.render('zoom', { user });
+});

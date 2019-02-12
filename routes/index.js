@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
+
 var db = require('./../models/user');
+
 
 // Get Homepage
 router.get('/', ensureAuthenticated, function(req, res){
@@ -19,6 +21,24 @@ router.get('/adp', ensureAuthenticated, function(req,res) {
 	var page = "ADP";
 	res.render('adp', {user});
 });
+
+router.put('/submitTrilogy',ensureAuthenticated, function(req, res) {
+	var userID = req.user._id;
+	var moduleN = req.body.name
+	moduleN = moduleN.replace(/^"(.*)"$/, '$1');
+	console.log(moduleN)
+	db.findOneAndUpdate({_id: userID}, {adp: false}, {new: true},)
+	.then(function(userC) {
+		// If the User was updated successfully, send it back to the client
+		res.json(userC);
+		
+		console.log(userC)
+	  })
+	  .catch(function(err) {
+		// If an error occurs, send it back to the client
+		res.json(err);
+	  });
+})
 
 router.get('/bamboo', ensureAuthenticated, function(req,res) {
 	var user = req.user;

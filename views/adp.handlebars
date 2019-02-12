@@ -30,17 +30,6 @@
 </div>
 <!--end of headContent-->
 
-<<<<<<< HEAD
-=======
-<div>
-    <div class="row">
-        <div class="col s1 content"></div>
-        <div class="col s5 content">
-            <h2>{{user}}</h2>
-            <p>Lorem ipsum dolor amet messenger bag trust fund hexagon hell of, food truck chillwave synth tbh enamel pin succulents crucifix ennui air plant cornhole raclette.</p>
->>>>>>> 138f596905c5e2373bee3c7d3a786746a35a910b
-
-
 <div class ="content">
     <!--2 row-->
     <div id="intro" class="section scrollspy" style="margin-top: 50px">
@@ -69,7 +58,7 @@
 
                 <p>Click ‘Register Here</p>
             </div>
-            <div class="col s5"><img class="rightContent" alt="ADP Login Screen" src="/img/adp1.png"></div>
+            <div class="col s5"><img class="rightContent materialboxed" alt="ADP Login Screen" src="/img/adp1.png"></div>
             <div class="col s1"></div>
         </div>
     </div>
@@ -109,7 +98,7 @@
                 <p>Fill in appropriate information to verify your identity and finish creating your account.</p>
             </div>
 
-            <div class="col s5"><img class="rightContent" alt="ADP Create an Account" src="/img/adp2.png"></div>
+            <div class="col s5"><img class="rightContent materialboxed" alt="ADP Create an Account" src="/img/adp2.png"></div>
             <div class="col s1"></div>
         </div>
     </div>
@@ -126,7 +115,7 @@
                 <p>If an entry is missed, inform your manager(s) via Slack direct message. Adding a note on your timecard does not notify your manager and they will not see it.</p>
 
             </div>
-            <div class="col s5"><img class="rightContent" alt="ADP Login Screen" src="/img/adp3.png"></div>
+            <div class="col s5"><img class="rightContent materialboxed" alt="ADP Login Screen" src="/img/adp3.png"></div>
             <div class="col s1"></div>
         </div>
     </div>
@@ -141,7 +130,7 @@
                 <p>Here you can view your timecard of current and previous pay periods.</p>
 
             </div>
-            <div class="col s5"><img class="rightContent" alt="ADP Timecard" src="/img/adp4.png"></div>
+            <div class="col s5"><img class="rightContent materialboxed" alt="ADP Timecard" src="/img/adp4.png"></div>
             <div class="col s1"></div>
         </div>
     </div>
@@ -156,7 +145,7 @@
                 <p>Access pay statements quickly via the homepage.</p>
 
             </div>
-            <div class="col s5"><img class="rightContent" alt="ADP Informaiton on Pay" src="/img/adp5.png"></div>
+            <div class="col s5"><img class="rightContent materialboxed" alt="ADP Informaiton on Pay" src="/img/adp5.png"></div>
             <div class="col s1"></div>
         </div>
     </div>
@@ -173,7 +162,7 @@
                         <span class="bullet"><li>Utilize the calculators; ADP offers financial tools to aid with: Salary Paycheck Calculator, Hourly Paycheck Calculator, Gross Pay Calculator, 401k Planner, 403(b) Planner, and W-4 Assistant</li></span>
                     </ul>
             </div>
-            <div class="col s5"><img class="rightContent" alt="ADP Access Info" src="/img/adp6.png"></div>
+            <div class="col s5"><img class="rightContent materialboxed" alt="ADP Access Info" src="/img/adp6.png"></div>
             <div class="col s1"></div>
         </div>
     </div>
@@ -189,7 +178,7 @@
                 </p>
 
             </div>
-            <div class="col s5"><img class="rightContent" alt="ADP Access Info" src="/img/adp7.png"></div>
+            <div class="col s5"><img class="rightContent materialboxed" alt="ADP Access Info" src="/img/adp7.png"></div>
             <div class="col s1"></div>
         </div>
     </div>
@@ -202,7 +191,7 @@
                 <p>The link will bring you to LifeMart, a website which provides various discounts.</p>
 
             </div>
-            <div class="col s5"><img class="rightContent" alt="ADP Access Info" src="/img/adp8.png"></div>
+            <div class="col s5"><img class="rightContent materialboxed" alt="ADP Access Info" src="/img/adp8.png"></div>
             <div class="col s1"></div>
         </div>
     </div>
@@ -225,7 +214,7 @@
         <div class="row">
             <div class="col s1"></div>
             <div class="col s10">
-                <img class="center" alt="ADP Access Info" src="/img/mobile.png">
+                <img class="center materialboxed" alt="ADP Access Info" src="/img/mobile.png">
             </div>
             <div class="col s1"></div>
         </div>
@@ -251,19 +240,64 @@
 
 </div> <!--end of content div-->
 
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="row">
+        <div class="col s12">
+            <h3>True or False: I left a note on my timecard for my manager about a missed time entry, they will see this and adjust it accordingly.?</h3>
+              <form id="quizthing">
+    <p>
+      <label>
+        <input name="group1" type="radio" />
+        <span>True</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input name="correctAnswer" type="radio" />
+        <span>False</span>
+      </label>
+    </p>
+
+  </form>
+        
+        </div>
+    </div>
+    </div>
+    <div class="modal-footer">
+      {{!-- <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a> --}}
+      <a class="btn next modal-close" id="submitQuiz">Submit</a>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>That's Right! Make sure you inform your manager directly via Slack if you need a time to be edited.</h4>
+    </div>
+    <div class="modal-footer">
+      <a href="/" class="btn modal-close waves-effect" id="complete" data-name="adp">Continue</a>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <h4>Looks like you might need to review this content.</h4>
+    </div>
+    <div class="modal-footer">
+      <a href="/adp" class="btn modal-close waves-effect">Review</a>
+    </div>
+  </div>
 <br>
 
 <!--Next and Back Buttons at the end of the page-->
 <div>
     <div class="row">
         <div class="col s6"><a class="btn back" href="/">Back</a></div>
-<<<<<<< HEAD
-        <div class="col s6"><a class="btn next" id="complete" data-name="adp" href="/">Next</a></div>
-=======
-       
-        <div class="col s6"><a id="complete" data-name="adp" class="btn next"  >Next</a></div>
-        
->>>>>>> 138f596905c5e2373bee3c7d3a786746a35a910b
+        <!--<div class="col s6"><a class="btn next" id="complete" data-name="adp" href="/">Next</a></div>
+        <div class="col s6"><a id="complete" data-name="adp" class="btn next"  >Next</a></div>-->
+        <div class="col s6"><a class="btn next modal-trigger" id="complete" data-name="adp" href="#modal1">Next</a></div>
+
     </div>
 </div>
 

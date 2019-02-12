@@ -38,7 +38,7 @@
     </div>
         <div class="row">
             <div class="col s1"></div>
-            <div class="col s5"><img class="leftContent" alt="Linkedin Profile" src="/img/linkedIn1.png"></div>
+            <div class="col s5"><img class="leftContent materialboxed" alt="Linkedin Profile" src="/img/linkedIn1.png"></div>
             <div class="col s5">
                 <p>Candidates often check our profiles. It is important to remember that you are representing Trilogy and to be a good ambassador of our brand.</p>
 
@@ -54,7 +54,7 @@
     <div id="brand" class="section scrollspy" >
         <div class="row">
             <div class="col s1"></div>
-            <div class="col s5"><img class="leftContent" alt="Linkedin Profile" src="/img/linkedIn2.png"></div>
+            <div class="col s5"><img class="leftContent materialboxed" alt="Linkedin Profile" src="/img/linkedIn2.png"></div>
             <div class="col s5">
                 <h4>Five big reasons:</h4>
                 <p>1. She has a professional photo.<br>
@@ -63,13 +63,13 @@
                     <br><br>
 
                     <!-- Modal Trigger -->
-                    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Get Trilogy Logo</a>
+                    <a class="waves-effect waves-light btn modal-trigger" href="#modal4">Get Trilogy Logo</a>
 
                     <!-- Modal Structure -->
-                    <div id="modal1" class="modal">
+                    <div id="modal4" class="modal">
                         <div class="modal-content">
                             <h4>Brand Logo</h4>
-                            <img style="width:50%;" alt="Trilogy Logo" src="/img/linkedIn4.png">
+                            <img style="width:50%;" alt="Trilogy Logo" class="materialboxed" src="/img/linkedIn4.png">
                          </div>
             <div class="modal-footer">
                 <a href="#!" class="modal-close waves-effect waves-red btn-flat">Close</a>
@@ -89,7 +89,7 @@
     <div>
         <div class="row">
             <div class="col s1"></div>
-            <div class="col s5"><img class="leftContent" alt="Linkedin Profile" src="/img/linkedIn3.png"></div>
+            <div class="col s5"><img class="leftContent materialboxed" alt="Linkedin Profile" src="/img/linkedIn3.png"></div>
             <div class="col s5">
                 <p>4. Everyone, even people who are not a connection of yours, can view your activity on LinkedIn. This includes your likes and comments on posts. Natalie’s activity is professional and shows her interest in self-improvement and our brand.</p>
                 <p>5. If you can, put the standard Trilogy message that Natalie used into the ‘Experience’ section of your LinkedIn profile.</p>
@@ -153,10 +153,68 @@
         </div>
     </div>
 
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col s12">
+                    <h6>Can anybody, connection or not, view your activity on LinkedIn?</h6>
+                    <form id="quizthing">
+                        <p>
+                            <label>
+                                <input name="correctAnswer" type="radio" />
+                                <span>Yes</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input name="group1" type="radio" />
+                                <span>No</span>
+                            </label>
+                        </p>
+                       
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            {{!-- <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a> --}}
+            <a class="btn next modal-close" id="submitQuiz">Submit</a>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h6>That's Right!</h6>
+        </div>
+        <div class="modal-footer">
+            <a href="/" class="btn modal-close waves-effect" id="complete" data-name="linkedin">Continue</a>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <h6>Looks like you might need to review this content.</h6>
+        </div>
+        <div class="modal-footer">
+            <a href="/linkedin" class="btn modal-close waves-effect">Review</a>
+        </div>
+    </div>
+    <br>
+
+    <!--Next and Back Buttons at the end of the page-->
     <div>
+        <div class="row">
+            <div class="col s6"><a class="btn back" href="/">Back</a></div>
+            <div class="col s6"><a class="btn next modal-trigger" data-name="linkedin" href="#modal1">Next</a></div>
+        </div>
+    </div>
+
+    {{!-- <div>
         <div class="row">
             <div class="col s6"><a class="btn back" href="/">Back</a></div>
             <div class="col s6"><a class="btn next" id="complete" data-name="linkedin" href="/">Next</a></div>
         </div>
-    </div>
+    </div> --}}
 </div> <!--end of content-->

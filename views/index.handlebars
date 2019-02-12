@@ -1,50 +1,60 @@
-
 <!--<img src="/style/trilogy-logo.png" alt="TrilogyLogo" id="logo">-->
-      
-      <div class="container">
-          <div class="row">
-            <div> <!--class="flow-text"-->
-                <h3 style="text-align: center"><strong>Welcome to Trilogy!</strong></h3>
-                <p style="text-align: center">Now lets get you trained</p>
 
-                <p>Start by moving through each of the tabbed lessons. Some of the set-ups in the lessons you will not be able to do until you are issued your Trilogy email - no worries you should get it soon! Go ahead and start the lesson. You will be able to look back and review when you are done since you will be using these tools on a daily basis.  Once you have completed all the lessons you will be given a quiz to test your comprehension of the material. If you have any questions on the material feel free to reach out to your manager, trainer or fellow team members.</p>
+<div class="container">
 
+    <div class="row">
+        <div>
+            <!--class="flow-text"-->
+            <h3 style="text-align: center"><strong>Welcome to Trilogy!</strong></h3>
+            <p style="text-align: center">Now lets get you trained</p>
+
+            <p>Start by moving through each of the tabbed lessons. Some of the set-ups in the lessons you will not be able to do until you are issued your Trilogy email - no worries you should get it soon! Go ahead and start the lesson. You will be able
+                to look back and review when you are done since you will be using these tools on a daily basis. Each section with be a quiz to test your comprehension of the material. If you have any questions on the
+                material feel free to reach out to your manager, trainer or fellow team members.</p>
+        </div>
+        <br>
+        <div class="row">
+            <!--<a class="btn-floating btn-large" href="/faq">FAQ's</a>-->
+            <div class="progress">
+                <div class="determinate" style="width: {{user.progress}}%"></div>
             </div>
-              <br>
-            <div class="row">
-              <!--<a class="btn-floating btn-large" href="/faq">FAQ's</a>-->
-
-                 <div class="progress">
-                    <div class="determinate" style="width: {{user.progress}}%"></div>
-                 </div>
-                      <a class="btn btn-block mainmenu" href="/trilogy">Trilogy</a>
-                      {{!-- <a class="btn btn-block mainmenu" href="/policies">Policies</a> --}}
-                      <a class="btn btn-block mainmenu" href="/team">Team Members</a>
-                      {{!-- <a class="btn btn-block mainmenu" href="/jobrole">Job Role</a> --}}
-                      <a class="btn btn-block mainmenu" href="/calendar">Availability Calendar</a>
-                      <a class="btn btn-block mainmenu" href="/adp">ADP</a>
-                      <a class="btn btn-block mainmenu" href="/email">Email</a>
-                      <a class="btn btn-block mainmenu" href="/slack">Slack</a>
-                      <a class="btn btn-block mainmenu" href="/linkedin">LinkedIN</a>
-                      <a class="btn btn-block mainmenu" href="/bamboo">Bamboo</a>
-                      {{!-- <a class="btn btn-block" href="/communicator">Communicator</a> --}}
-                      <a class="btn btn-block mainmenu" href="/salesforce">Sales Force</a>
-                      <!--<a class="btn btn-block mainmenu" href="/talentpool">Talent Pool</a>-->
-                      <a class="btn btn-block mainmenu" href="/evolve">Evolve</a>
-                        <a class="btn btn-block mainmenu" href="/zoom">Zoom</a>
-                      <a class="btn btn-block mainmenu" href="/additional">Additional Links</a>
-                        <br>
-                        <a class="btn btn-block mainmenu" href="/">Quiz</a>
-
-                      {{!-- <p class="btn btn-block section-title">Interviews</p>
-                      <a class="btn btn-block" href="/">HR</a>
-                      <p class="btn btn-block section-title">Sourcing</p>
-                      <a class="btn btn-block" href="/">Tech</a>
-                      <a class="btn btn-block" href="/">Finals</a>
-                      <a class="btn btn-block" href="/">Teach Back</a>
-                      <a class="btn btn-block" href="/">Offers</a> --}}
+            <a class="btn btn-block mainmenu" id="trilogymenu" data-done="{{user.trilogy}}" href="/trilogy">Trilogy{{#if user.trilogy}}<i class="material-icons">check</i>{{/if}}</a> {{!-- <a class="btn btn-block mainmenu" href="/policies">Policies</a>            --}}
+            <a class="btn btn-block mainmenu" href="/team">Team Members{{#if user.team}}<i class="material-icons">check</i>{{/if}}</a> {{!-- <a class="btn btn-block mainmenu" href="/jobrole">Job Role</a> --}}
+            <a class="btn btn-block mainmenu" href="/calendar">Availability Calendar{{#if user.calendar}}<i class="material-icons">check</i>{{/if}}</a>
+            <a class="btn btn-block mainmenu" href="/adp">ADP{{#if user.adp}}<i class="material-icons">check</i>{{/if}}</a>
+            <!--<a class="btn btn-block mainmenu" href="/adp2">ADP2</a>-->
+            <a class="btn btn-block mainmenu" href="/email">Email{{#if user.mail}}<i class="material-icons">check</i>{{/if}}</a>
+            <a class="btn btn-block mainmenu" href="/slack">Slack{{#if user.slack}}<i class="material-icons">check</i>{{/if}}</a>
+            <a class="btn btn-block mainmenu" href="/linkedin">LinkedIN{{#if user.linkedin}}<i class="material-icons">check</i>{{/if}}</a>
+            <a class="btn btn-block mainmenu" href="/bamboo">Bamboo{{#if user.bamboo}}<i class="material-icons">check</i>{{/if}}</a> {{!-- <a class="btn btn-block" href="/communicator">Communicator</a> --}}
+            <a class="btn btn-block mainmenu" href="/salesforce">Sales Force{{#if user.salesforce}}<i class="material-icons">check</i>{{/if}}</a>
+            <!--<a class="btn btn-block mainmenu" href="/talentpool">Talent Pool{{#if user.talentpool}}<i class="material-icons">check</i>{{/if}}</a>-->
+            <a class="btn btn-block mainmenu" href="/evolve">Evolve{{#if user.evolve}}<i class="material-icons">check</i>{{/if}}</a>
+            <a class="btn btn-block mainmenu" href="/zoom">Zoom{{#if user.zoom}}<i class="material-icons">check</i>{{/if}}</a>
+            <a class="btn btn-block mainmenu" href="/additional">Additional Links</a>
+            <br> {{!-- <a class="btn btn-block mainmenu" href="/">Quiz</a> --}}
+            <!-- Element Showed -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <h4>Welcome to Trilogy!</h4>
+                    <p>Start by moving through each of the tabbed lessons. Some of the set-ups in the lessons you will not be able to do until you are issued your Trilogy email - no worries you should get it soon! Go ahead and start the lesson. You will
+                        be able to look back and review when you are done since you will be using these tools on a daily basis. Once you have completed all the lessons you will be given a quiz to test your comprehension of the material. If you have any
+                        questions on the material feel free to reach out to your manager, trainer or fellow team members.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn modal-close waves-effect">Start</a>
+                </div>
             </div>
-            <br>
-            <br>
-          </div>
-      </div>
+            {{!--
+            <p class="btn btn-block section-title">Interviews</p>
+            <a class="btn btn-block" href="/">HR</a>
+            <p class="btn btn-block section-title">Sourcing</p>
+            <a class="btn btn-block" href="/">Tech</a>
+            <a class="btn btn-block" href="/">Finals</a>
+            <a class="btn btn-block" href="/">Teach Back</a>
+            <a class="btn btn-block" href="/">Offers</a> --}}
+
+        </div><!--end of row2-->
+
+    </div><!--end of row 1-->
+</div><!--end of container-->

@@ -16,6 +16,17 @@ $(document).ready(function() {
 
     $('.scrollspy').scrollSpy();
 
+    
+        $('.materialboxed').materialbox();
+      
+        function firstTimeUser() {
+            var hasUsed = $("#trilogymenu").attr("data-done");
+            if (hasUsed === "false") {
+                $("#modal1").modal("open")
+            }
+        }
+
+        firstTimeUser();
 
 });
 
@@ -37,6 +48,29 @@ $(function() {
              
             }
           );
+    });
+
+    $("#submitQuiz").on("click", function(event) {
+        if ($("input[name=correctAnswer]:checked").length > 0) {
+            $("#modal2").modal("open");
+        } else {
+            $("#modal3").modal("open");
+        }
+        // var moduleName = $(this).attr("data-name");
+        // var moduleHolder = {
+        //     name: moduleName
+        // }
+        // console.log(moduleName)
+        // console.log("test")
+        // $.ajax("/submitTrilogy", {
+        //     type: "Put",
+        //     data: moduleHolder
+        //   }).then(
+        //     function() {
+        //       console.log("Success");
+             
+        //     }
+        //   );
     });
 
    

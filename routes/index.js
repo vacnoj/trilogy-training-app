@@ -80,6 +80,11 @@ router.get('/evolve', ensureAuthenticated, function(req,res) {
     res.render('evolve', {user});
 });
 
+router.get('/additional', ensureAuthenticated, function(req,res) {
+    var user = req.user;
+    res.render('additional', {user});
+});
+
 router.get('/quiz', ensureAuthenticated, function(req,res) {
     var user = req.user;
     res.render('quiz', {user});

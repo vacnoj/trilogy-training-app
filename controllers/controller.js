@@ -84,3 +84,7 @@ router.get("/users/team", function(req, res, body) {
     var user = req.user;
     res.render('team', { user });
 });
+router.get("/users/additional", function(req, res, body) {
+    var user = req.user;
+    res.render('additional', { user });
+});

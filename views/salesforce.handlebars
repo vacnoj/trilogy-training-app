@@ -1,20 +1,16 @@
 <!--header row-->
-<div class="headContent">
-    <!--1 row-->
-    {{!-- <div>
-        <div class="row">
-            <div class="col s12 subject"><p>Sales Force</p></div>
-        </div>
-    </div> --}}
+<div class="headContent" xmlns="http://www.w3.org/1999/html">
 
     <div class ="row">
         <div class="section table-of-contents">
-          <!--  <div class="col s2"><a href="#intro">Intro</a></div>
-            <div class="col s2"><a href="#function">Function</a></div>
-            <div class="col s2"><a href="#signature">Signature</a></div>-->
-            <!--<div class="col s2"><a href="#how">How</a></div>-->
-            <!--<div class="col s2"><a href="#story">Job4</a></div>
-            <div class="col s2"><a href="#story">Job5</a></div>-->
+            <!--<div class="col s3"></div>-->
+            <div class="col s2 menu-items"><a href="#intro">Intro</a></div>
+            <div class="col s2 menu-items"><a href="#candidates">Add Candidates</a></div>
+            <div class="col s2 menu-items"><a href="#duplicates">Duplicates</a></div>
+            <div class="col s2 menu-items"><a href="#">4</a></div>
+            <div class="col s2 menu-items"><a href="#">5</a></div>
+            <div class="col s2 menu-items"><a href="#">6</a></div>
+
         </div>
     </div>
     <!--end of table of contents-->
@@ -39,7 +35,7 @@
             </div>
             <div class="col s1"></div>
         </div>
-    </div>
+    </div><!--end of row 2-->
 
     <!--3 row-->
     <div>
@@ -62,30 +58,242 @@
             <div class="col s5"><img class="rightContent" alt="Sales Force Login Screen" src="/img/salesforce1.png"></div>
             <div class="col s1"></div>
         </div>
-    </div>
+    </div><!--end of row 3-->
 
     <!--4 row-->
     <div>
         <div class="row">
             <div class="col s1"></div>
-            <div class="col s5">
-                <h4>How to log in:</h4>
-                <p>There is a universal login:</p>
+            <div class="col s10">
+                <p>App Setting should be under <strong>Trilogy Admissions</strong> to change this click the 9 dots in the top left that are in a square. (Some screenshots were from testing)</p>
+                <div><img class="rightContent" alt="Sales Force Login Screen" src="/img/salesforce2.png"></div>
+                <br>
+                <div>
+                    <button class="btn" onclick="myFunction()">Show Me More</button>
+                    <div id="myDIV" style="display:none">
+                        <img class="rightContent" alt="Sales Force App" src="/img/salesforce2(2).png">
+                    </div>
+                </div>
+                <br>
                 <ul>
-                    <strong>
-                        <li>Username: academicrecruitment@trilogyed.com</li>
-                        <li>Password: academic2018!!!</li>
-                    </strong>
+                    <li>The tab you will be using most often is the <strong>LEADS</strong> tab.</li>
+                        <br>
+                    <li>  What is a <strong><i>lead?</i></strong></li>
+                    <li>   A lead is a candidate that has been reached out to by Trilogy.</li>
                     <br>
-                    <li>Click Here for the website: <a target="_blank" href="https://www.salesforce.com/">Sales Force</a></li>
-                    <li>Your manager, Natalie, will receive a one time code to approve your device.</li>
-                    <li>After you enter in the code you will be free to use SaleForce.</li>
+                    <li>   You want to go to <strong>Instructor Recruiting</strong> this will show a complete list of the candidates that are leads.</li>
+                    <br>
+                    <li>   Click <strong>Leads</strong> then under the left-hand side title use the drop down search bar to find <strong>Instructor Recruiting</strong>.</li>
                 </ul>
+                <br>
+                <div>
+                    <img class="rightContent" alt="Sales Force View" src="/img/salesforce3.png">
+                </div>
+                <br>
+                <div>
+                    <ul>
+                        <li>Candidates that have not had an interview or scheduled interview will have a <strong>NEW</strong> leads status. These candidate are most likely candidates we reach out to via sourcing and we currently do not have an interview schedule with them.</li>
+                        <br>
+                        <li> After the interview is conducted their lead status will be listed as <strong>CLOSED MISSED</strong> or <strong>HR INTERVIEW PASSED</strong>. Interview Passed status will convert the candidate to <strong>Opportunities</strong> and create an <strong>Account</strong>.</li>
+                    </ul>
+                </div>
             </div>
-            <div class="col s5"><img class="rightContent" alt="Sales Force Login Screen" src="/img/salesforce1.png"></div>
             <div class="col s1"></div>
         </div>
     </div> <!--end of row 4-->
+
+    <!--5 row-->
+    <div>
+        <div id="candidates" class="section scrollspy">
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s10">
+                <h4>Adding Candidates to SalesForce</h4>
+                <p>
+                    You want to add all candidates that have schedule with you through YCBM or Talent Pool candidates from sourced location.
+                    <br><br>
+                    Two ways to add candidates:
+                    Drop down on the Leads Tab <strong>+ New Lead</strong>
+                    Under <strong>Instructor Recruiting</strong> page right hand side is a button labeled <strong>New</strong>
+                </p>
+                <div><img class="rightContent" alt="Sales Force New Lead" src="/img/salesforce4.png"></div>
+                <div><img class="rightContent" alt="Sales Force New Lead" src="/img/salesforce5.png"></div>
+            </div>
+            <div class="col s1"></div>
+        </div>
+    </div> <!--end of row 5-->
+
+        <div>
+            <div class="row">
+                <div class="col s1"></div>
+                <div class="col s5">
+                    <p>Be sure to select <strong>Instructor Recruiting</strong> from the list of options.</p>
+                </div>
+                <div class="col s5"><img class="rightContent" alt="Sales Force IR" src="/img/salesforce6.png"></div>
+                <div class="col s1"></div>
+            </div>
+        </div>
+
+        <div>
+            <div class="row">
+                <div class="col s1"></div>
+                <div class="col s10">
+                    <p>A pop up screen will prompt you to fill out all the marked <span style="color:red;"> *</span> for mandatory fields
+                    <br><br>
+                    <span style="color:red;"><strong>Please fill out the non-mandatory fills if you have the information such as LinkedIn URL</span></strong>
+                    </p>
+                </div>
+                <div class="col s1"></div>
+            </div>
+        </div>
+
+        <div>
+            <div class="row">
+                <div class="col s1"></div>
+                <div class="col s5"><img class="rightContent" alt="Sales Force Creating Lead" src="/img/salesforce7.png"></div>
+                <div class="col s5"> <img class="rightContent" alt="Sales Force Creating Lead" src="/img/salesforce8.png"></div>
+                <div class="col s1"></div>
+            </div>
+        </div>
+
+        <div>
+            <div class="row">
+                <div class="col s1"></div>
+                <div class="col s10">
+                    <p>
+                    <h5>Program (Options):</h5>
+                    <ul>
+                        <li>Full-Stack Flex</li>
+                        <li>Data Visualization</li>
+                        <li>Cybersecurity</li>
+                        <li>UX/UI</li>
+                        <li>Full-Stack Flex Online (LOL)</li>
+                        <li>Full-Stack Flex Online Async (Trilogy Online)</li>
+                    </ul>
+                    <br>
+                    <strong>These options will give you the corresponding HR Interview Questions</strong>
+                    <br><br>
+                    <h5>University:</h5>
+                    Will populate based on most recent and the first 3 letters entered<br>
+                    <span style="color:red;"><strong>DO NOT create a new Account if the university is not listed - Inform your immediate manager (Natalie Ta)</strong></span> Universities not listed should not be a problem since Universities need to be in the system prior to sourcing for candidates.
+                    <br><br>
+                    <h5>Interested in Flex?</h5>
+                    <p>
+                    Refers to whether the candidate is flexible between a 12 week immersive full-time schedule and a 24 week nights and weekends part-time schedule.
+                    <br><br>
+                    <h5> Lead Status (Options):</h5>
+                    <ul>
+                        <li>New - candidate is being imported into system</li>
+                        <li>HR Interview - the candidate is in the process of an HR Interview</li>
+                        <li>Closed Missed - we no longer are looking at them as a prospect</li>
+                        <li>HR Interview Passed - candidate passed HR interview (do not select until after interview is conducted)</li>
+                        <li>Auto Converted - Do not use</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="col s1"></div>
+            </div>
+        </div>
+
+
+
+        <!--6 row-->
+        <div id="duplicates" class="section scrollspy">
+            <div class="row">
+                <div class="col s1"></div>
+                <div class="col s10">
+                    <h4>Duplicate Candidate</h4>
+                    <p>
+                        Candidate being added who are already a Lead/Account will trigger a duplicate warning.
+                        <br><br>
+                        <span style="color:red;"><strong>If there is a duplicate warning - please review duplicate candidate(s). The system is checking for the same first name, last name and email.</strong></span><br>
+                        If they match - use the existing Leads profile to conduct interview and be sure to change the Lead Owner to your name. DO NOT CREATE A NEW LEAD also beware it could be a FORMER STUDENT/PROSPECTIVE STUDENT profile made by the admin team. In that case you will need to follow the process of a Former Student/Prospective Student by creating a unique new lead.
+                        <br><br>
+                        If candidate does not match - you can exit popup screen.
+                        <br><br>
+
+
+                    <h5>Scenarios for Continuing with Next Steps if there is a Closed Missed duplicated Lead/Accounts</h5>
+                    <ul>
+                        <li>Depends on why the candidate is Closed Missed. If they missed because of tech skills about 3 months ago and reschedules/passes - okay with moving forward.<br></li>
+                        <br>
+                        <li>If they miss by personality, personality can be interpreted differently by different HR interviewers - okay with moving forward.<br></li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="col s1"></div>
+            </div>
+        </div><!--end of row 6-->
+
+        <!--last row-->
+        <div>
+            <div class="row">
+                <div class="col s1"></div>
+                <div class="col s5"> <img class="rightContent" alt="Sales Force Creating Lead" src="/img/salesforce9.png"></div>
+                <div class="col s5"> <img class="rightContent" alt="Sales Force Creating Lead" src="/img/salesforce10.png"></div>
+                <div class="col s1"></div>
+            </div>
+        </div><!--end of row last row-->
+
+        <!--last row-->
+        <div>
+            <div class="row">
+                <div class="col s1"></div>
+                <div class="col s10">
+                    <p>
+                    <h5>Former Student</h5>
+                        Complete the call as you would any other candidate. Make sure in the HR Interview Form you also mark Are you a former student of one of our programs? as Yes - this will help the Technical Interviewers.
+                        <br><br>
+                    <h5>Former Student/Prospective Student Profile</h5>
+                        We found a bug in SF - but fret not, there is a workaround (for now - hopefully not forever).
+                        <br><br>
+                        Directions:<br>
+                    <ol>
+                        <li>If you are not already, please make sure you are asking if the candidate is a former student (there’s a field in SF for this).</li>
+                        <li>If they ARE a former student please put +ta or +instructor at the end of their email</li>
+                        i.e. if  you were interviewing Jon, you’d put: jcaviness+ta@trilogyed.com
+                        <li>If candidate will not convert to HR Passed it could be because they were a prospective student and already in the system. You want to change their email to jcaviness+@trilogyed.com before passing them to HR Passed.</li>
+                    </ol>
+                        <br><br>
+                        <h5>Why?:</h5>
+                        If we have a former student/perspective student, there is already  a student account associated with the candidate. Even if we create an Instructional account for them, SF will favor the first account which will mess with our information. For now, the work around is +ta and +instructor or + after the email.
+                        <br><br>
+                        The dev team is working on a solution, but for now - we are hacking the system.
+                        <br><br>
+                        Example of what a Former Student/Prospective Student profile would look like:
+                    </p>
+                </div>
+                <div class="col s1"></div>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="row">
+                <div class="col s1"></div>
+                <div class="col s10">
+                    <img>
+                </div>
+                <div class="col s1"></div>
+            </div>
+        </div>
+
+
+
+        <!--last row-->
+        <div>
+            <div class="row">
+                <div class="col s1"></div>
+                <div class="col s10">
+                    As of Jan 14, 2019
+                </div>
+                <div class="col s1"></div>
+            </div>
+        </div><!--end of row last row-->
+
+
+
+
 
 </div> <!--end of content div-->
 
@@ -98,3 +306,13 @@
     </div>
 </div>
 
+<script>
+    function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>

@@ -235,7 +235,6 @@ strong {
 
 .btn{
     background-color: #27afca;
-    padding-top: 10px;
 }
 
 .table-of-contents a.active {
@@ -280,8 +279,12 @@ a.pageNav {
 }*/
 
 .mainmenu {
-    margin-bottom: 6px
+    margin-bottom: 6px;
     
+}
+
+#more {
+    display: none;
 }
 
 

@@ -10,19 +10,14 @@ router.get('/', ensureAuthenticated, function(req, res){
 
 router.get('/about', ensureAuthenticated, function(req,res) {
 	var user = req.user;
-	var page = "About"
+	var page = "About";
 	res.render('about', {user});
 });
 
 router.get('/adp', ensureAuthenticated, function(req,res) {
 	var user = req.user;
-	var page = "ADP"
+	var page = "ADP";
 	res.render('adp', {user});
-});
-
-router.get('/adp2', ensureAuthenticated, function(req,res) {
-	var user = req.user;
-	res.render('adp2', {user});
 });
 
 router.get('/bamboo', ensureAuthenticated, function(req,res) {

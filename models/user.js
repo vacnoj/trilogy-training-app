@@ -73,6 +73,11 @@ var UserSchema = mongoose.Schema({
 		default: false
 		
 	},
+    zoom: {
+        type: Boolean,
+        default: false
+
+    },
 	progress: {
 		type: Number,
 		default: 0

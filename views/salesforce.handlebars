@@ -99,7 +99,6 @@
     </div> <!--end of row 4-->
 
     <!--5 row-->
-    <div>
         <div id="candidates" class="section scrollspy">
         <div class="row">
             <div class="col s1"></div>
@@ -238,24 +237,34 @@
                 <div class="col s10">
                     <p>
                     <h5>Former Student</h5>
-                        Complete the call as you would any other candidate. Make sure in the HR Interview Form you also mark Are you a former student of one of our programs? as Yes - this will help the Technical Interviewers.
+                        Complete the call as you would any other candidate. Make sure in the HR Interview Form you also mark "yes" to the question Are you a former student of one of our programs? - this will help the Technical Interviewers.
                         <br><br>
                     <h5>Former Student/Prospective Student Profile</h5>
-                        We found a bug in SF - but fret not, there is a workaround (for now - hopefully not forever).
+                        We found a bug in SalesForce - but fret not, there is a workaround (for now - hopefully not forever).
                         <br><br>
                         Directions:<br>
                     <ol>
-                        <li>If you are not already, please make sure you are asking if the candidate is a former student (there’s a field in SF for this).</li>
+                        <li>Please make sure you are asking if the candidate is a former student (there’s a field in SF for this).</li>
                         <li>If they ARE a former student please put +ta or +instructor at the end of their email</li>
-                        i.e. if  you were interviewing Jon, you’d put: jcaviness+ta@trilogyed.com
-                        <li>If candidate will not convert to HR Passed it could be because they were a prospective student and already in the system. You want to change their email to jcaviness+@trilogyed.com before passing them to HR Passed.</li>
+                        i.e. if  you were to interviewing Jon, you’d put: jcaviness+ta@trilogyed.com
+                        <li>A prospective student who is already in the system. You want to change their email to jcaviness+@trilogyed.com before converting them to HR Passed.</li>
                     </ol>
                         <br><br>
                         <h5>Why?:</h5>
-                        If we have a former student/perspective student, there is already  a student account associated with the candidate. Even if we create an Instructional account for them, SF will favor the first account which will mess with our information. For now, the work around is +ta and +instructor or + after the email.
+                        If we have a former student/perspective student, there is already a student account in the system. Even if we create an Instructional account for them, SalesForce will favor the first account which will mess with our information. For now, the work around is +ta and +instructor or + after the @ in the email.
                         <br><br>
-                        The dev team is working on a solution, but for now - we are hacking the system.
+                        The development team is working on a solution, but for now - we are hacking the system.
                         <br><br>
+                        If you passed the candidate to a Technical Interview without the hack for email your candidate <strong>may not</strong> get their tech interview (if they do have a Technical/Teach Back/Final TA interview - every interview entered would need to be re-entered by that person. Which means more work for you and the team because the final stage of getting the offer will not go through
+                        <br><br>
+                    Ways you can tell if it is a Former/Prospective Student Profile
+                        <ol>
+                            <li>You do no recognize the Owner Alias/Lead Owner</li>
+                            <li>The Nav bar on the profile has different stages (EX Attempted Contact or Cold) No HR Interview or HR Interview Passed</li>
+                            <li> The profile had different requirements - Where the Role at?</li>
+                            <li>Lead Sourced usually always says something like Google-Paid as our team usually has LinkedIn</li>
+                        </ol>
+                        <br>
                         Example of what a Former Student/Prospective Student profile would look like:
                     </p>
                 </div>
@@ -268,7 +277,7 @@
             <div class="row">
                 <div class="col s1"></div>
                 <div class="col s10">
-                    <img>
+                    <img class="rightContent" alt="Sales Force Former Student Profile" src="/img/salesforce11.png">
                 </div>
                 <div class="col s1"></div>
             </div>
@@ -335,7 +344,7 @@
 
     <div id="modal2" class="modal">
         <div class="modal-content">
-            <h6>That's Right!</h6>
+            <h4>That's Right!</h4>
         </div>
         <div class="modal-footer">
             <a href="/" class="btn modal-close waves-effect" id="complete" data-name="salesforce">Continue</a>
@@ -370,14 +379,3 @@
         <div class="col s6"><a class="btn next" id="complete" data-name="salesforce" href="/">Next</a></div>
     </div>
 </div> --}}
-
-<script>
-    function myFunction() {
-        var x = document.getElementById("myDIV");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-    }
-</script>

@@ -121,6 +121,11 @@ float: right;
     padding-top: 40px;
 }
 
+.rc {
+    filter: grayscale(100%);
+    width: 90%;
+}
+
 .teamPics {
     width: 33.33%;
     filter: grayscale(100%);
@@ -130,6 +135,13 @@ float: right;
     width: 90%;
     filter: grayscale(100%);
 }
+
+.managerPics {
+    width: 75%;
+    filter: grayscale(100%);
+}
+
+
 
 .title {
     font-weight: 900;
@@ -171,11 +183,10 @@ img.leftContent {
 
 div.content {
     overflow: scroll;
+    /*padding: 100px 0;*/
     padding: 10px 0 20px 0;
     /*margin: 200px auto 0 auto;
-    commented out because scrollspy left a big gap with this code
-    */
-
+    commented out because scrollspy left a big gap with this code */
 }
 
 div.content2 {
@@ -183,9 +194,7 @@ div.content2 {
     padding: 40px 0 20px 0;
     margin-top: 100px;
     /*margin: 200px auto 0 auto;
-    commented out because scrollspy left a big gap with this code
-    */
-
+    commented out because scrollspy left a big gap with this code */
 }
 
 img.school {
@@ -207,7 +216,25 @@ strong {
 /*new content for scrollspy*/
 
 .scrollspy {
-    padding-top: 10px;
+    padding-top: 20px;
+}
+
+.table-of-contents {
+    margin-left: 10px;
+}
+
+.table-of-contents a.active {
+    border-left: 2px solid #35c2e1;
+    margin-left: 10px;
+}
+
+.table-of-contents a:hover {
+    border-left: 1px solid #35c2e1;
+    margin-left: 10px;
+}
+
+.btn{
+    background-color: #27afca;
 }
 
 .table-of-contents a.active {
@@ -238,13 +265,30 @@ strong {
     margin-bottom: 20px;
 }
 
+
+/*.pageNav {
+    justify-content: center;
+    display: flex;
+    !* align-items: center; *!
+    !*text-align: center;*!
+}
+
+a.pageNav {
+    padding-right: 10px;
+    padding-left: 10px;
+}*/
+
 .mainmenu {
-    margin-bottom: 6px
+    margin-bottom: 6px;
     
+}
+
+#more {
+    display: none;
 }
 
 .check-position {
 
-    
 }
+
 
